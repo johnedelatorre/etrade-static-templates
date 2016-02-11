@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tearsheet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/etrade-bootstrap/dist/css/etrade-bootstrap.css">
+    <link rel="stylesheet" href="css/tearsheet.css">
+  </head>
+  <body>
+    <header class="navbar">
+        <img src="img/navheader.png" class="fix-align">
+    </header>
+    <div class="container-wrapper">
+      <main class='container width-fix'><!-- container -->
+        <h1><a href="http://projects.lukehaas.me/css-loaders">Single Element CSS Spinners</a></h1><p>This is a collection of loading spinners animated with CSS.</p>
+<p>Each spinner consists of a single <code>div</code> with a class of <code>loader</code> and content text of &quot;Loading...&quot;.
+The text is for screen readers and can be used as a fallback state for older browsers.</p>
+<p>The aim of this project was to create a set of minimal loading spinners that are visually appealing and also convey their intended meaning.</p>
+<p>A strict limit of one element per loader (not including pseudo-elements) was placed on this project based on the belief that something as simple as a loader doesn&#39;t deserve more.</p>
+<p>Each loader is given a font size in pixels and all other sizes are in ems so to change the size of a loader, just adjust the font-size.</p>
+<h2>Demo</h2><p><a href="http://projects.lukehaas.me/css-loaders"><img src="https://raw.githubusercontent.com/lukehaas/css-loaders/step2/images/css-loaders-screenshot.jpg" alt="css-loaders-screenshot"></a></p>
+<blockquote>
+<p><a href="http://projects.lukehaas.me/css-loaders">Check it live</a>.</p>
+</blockquote>
+<h2>Browser Support</h2><table>
+<thead>
+<tr>
+<th><img src="https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png" alt="IE"></th>
+<th><img src="https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png" alt="Chrome"></th>
+<th><img src="https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png" alt="Firefox"></th>
+<th><img src="https://raw.github.com/alrra/browser-logos/master/opera/opera_48x48.png" alt="Opera"></th>
+<th><img src="https://raw.github.com/alrra/browser-logos/master/safari/safari_48x48.png" alt="Safari"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IE 10+ ✔</td>
+<td>Chrome 4.0+ ✔</td>
+<td>Firefox 16.0+ ✔</td>
+<td>Opera 15.0+ ✔</td>
+<td>Safari 4.0+ ✔</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>Contributing</h2><ol>
+<li>Fork it!</li>
+<li>Create your feature branch: <code>git checkout -b my-new-feature</code></li>
+<li>Commit your changes: <code>git commit -m &#39;Add some feature&#39;</code></li>
+<li>Push to the branch: <code>git push origin my-new-feature</code></li>
+<li>Submit a pull request :)</li>
+</ol>
+<h2>History</h2><p>For detailed changelog, check <a href="https://github.com/lukehaas/css-loaders/releases">Releases</a>.</p>
+<h2>License</h2><p><a href="https://github.com/lukehaas/css-loaders/blob/step2/LICENSE">MIT License</a></p>
+      </main>
+    </div>
+    <script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script title="Bootstrap CDN" src="http//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/tearsheet.js"></script>
+    <script src="js/spin.min.js"></script>
+    <script src="js/jquery.spin.js"></script>
+    <script>
+      $('#preview1').spin()
+
+      //Remove spinner upon click
+      $('.preview').click(function () {
+        $(this).spin(false)
+      });
+    </script>
+  </body>
+</html>

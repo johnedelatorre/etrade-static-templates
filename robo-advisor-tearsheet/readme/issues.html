@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ReadMe</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../bower_components/etrade-bootstrap/dist/css/etrade-bootstrap.css">
+    <style>
+      h1,h2,h3,h4,h5,h6{
+        font-weight: bold;
+      }
+      h2{
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+      h3{
+        margin-bottom: 12px;
+      }
+      h4{
+        margin-bottom: 8px;
+      }
+      .panel-body li{
+        list-style-type: none;
+      }
+      a.major{
+        display: block;
+        margin-top: 5px;
+        font-weight: bold;
+      }
+      a.minor{
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class='container'>
+        <div class='row'> 
+          <div class='col-md-4 col-md-push-8'>       
+            <nav class='panel panel-default'>
+              <ul id='nav' class='panel-body'>
+              </ul>
+            </nav>
+          </div>
+          <div class='col-md-8 col-md-pull-4 '>       
+            <h2>Issue Log</h2><h3>Tech handoff issues</h3><h4>Image urls</h4><p>css <code>url()</code> paths in .scss files will need to be updated to point to their production urls. See (this file for a list of the 6 .scss files with url() pointers[Find_Results].</p>
+<h4>Items not included in the tearsheets</h4><p>The tearsheets focus on the wizard and results pages. All other aspects of the Design delivery are captured in <a href="downloads/Adaptive_Portfolio_Documentation_v1SB.pdf">redlined visual design specs</a>.  </p>
+<p>Question 5 of the wizard is not included in the tearsheets. It is outlined in the <a href="downloads/Adaptive_Portfolio_Documentation_v1SB.pdf">visual design specs</a>.</p>
+<p>We didn&#39;t capture the results page performance chart in code.</p>
+<p>The donut charts are intended to have an inner caret <a href="downloads/Adaptive_Portfolio_Documentation_v1SB.pdf">see visual specs</a>. We did not add this customization to our highcharts donut instances.</p>
+<p>We did not address centered text inside of the donut charts <a href="downloads/Adaptive_Portfolio_Documentation_v1SB.pdf">see visual specs</a>.</p>
+<hr>
+<h3>Forthcoming Design updates</h3><h4>Wizard Icons</h4><p>The wizard icons in the circles will be getting updated. There are no implications for layout, responsive etc. The new icons will be a 1:1 replacement for what we&#39;re handing off in version 1 of the tearsheets.</p>
+<h4>Chart colors</h4><p>Chart colors will be getting updated based on feedback from the branding team. This will impact the highcharts .js color config as well as the .scss variables used to render the bar charts.  </p>
+<h4>ETrade Fort web font</h4><p>The current tearsheets use a for-placement-only version of our brand font Fort in the Light weight. Design will be going through the procurement process to get a proper web license for Fort and will supply Web-Dev with a drop in replacement for the official .otf .ttf etc. files. We expect this to be ready in late November.</p>
+<hr>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src='js/code.snippet.js'></script>
+    <script>
+     (function(){
+       var nav = document.getElementById('nav');
+       document.addEventListener('DOMContentLoaded', function(){
+         var elements = document.querySelectorAll('h2,h3');
+         var html = '';
+         function makeName(el){
+            return el.textContent.replace(/ /g,'-');
+         }
+         Array.prototype.forEach.call(elements, function(el, i){
+           var _class = el.tagName === 'H2' ? 'major' : 'minor';
+           html += '<li><a class='+_class+' href="#'+makeName(el)+'">'+el.textContent+'</a></li>';
+           el.insertAdjacentHTML('beforebegin', '<a name="'+makeName(el)+'"></a>');
+         });
+         nav.innerHTML = html;
+       });
+     })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "etrade-prototype-nav",
+  "version": "1.0",
+  "main":["responsive2/bella-port-en_US-debug.js","responsive2/custom.css"],
+  "description": "The E*TRADE nav based on production, but with prototype changes",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

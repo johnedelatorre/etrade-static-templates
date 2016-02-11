@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tearsheet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/etrade-bootstrap/dist/css/etrade-bootstrap.css">
+    <link rel="stylesheet" href="css/tearsheet.css">
+  </head>
+  <body>
+      <main class='container'><!-- container -->
+        <h1>Contributing</h1><h2>Contrbuting to the Styleguide</h2><h3>Installing prequisite software</h3><ul>
+<li><code>npm install -g harp@0.15.2</code></li>
+<li><code>npm install -g bower</code></li>
+</ul>
+<blockquote>
+<p><strong>Note</strong> there is an issue with the current versions of harp &amp; node. Installing harp v0.15.2 resolves the issue</p>
+</blockquote>
+<hr>
+<h3>Running the styleguide locally</h3><p><code>npm run develop</code><br>This will install the <code>bower</code> dependencies and start the harp server. <a href="http://harpjs.com/docs/environment/server">Harp&#39;s server</a> watches any <code>.scss, .less, .md, .ejs, .jade, etc.</code> files and compiles them on the fly.</p>
+<hr>
+<h3>Editing the styleguide</h3><p>Other than bootstrap &amp; bootstrap&#39;s jquery dependency, the styleguide is framework/library agnostic. The small amount of .js in the guide is written in native javascript.</p>
+<p>The styleguide is a static website built with <a href="http://harpjs.com/">harpjs</a>. It uses <code>.scss</code> for <code>.css</code> and <code>.ejs</code> for html layouts and partials.</p>
+<h4>harp conventions worth knowing.</h4><p><strong><a href="http://harpjs.com/docs/development/layout">layouts</a></strong> </p>
+<p><strong><a href="http://harpjs.com/docs/development/partial">partials</a></strong></p>
+<p><strong><a href="http://harpjs.com/docs/development/metadata">metadata</a></strong></p>
+<hr>
+<h2>Working with Git</h2><p>E*Trade Bootstrap lives in our internal <a href="http://gitlab.etrade.com/">gitlab</a> instance. We use an adaptation of the <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Git Flow</a> workflow to manage our branches in a sane way, and allow for code reviews, as well as having one place to manage conversations about components that is close to the code.</p>
+<h3>Naming convention for branches</h3><p><strong>Master</strong>
+Master is the main release branch and always reflects the production ready version of the project. Master is a protected branch that can only be modified by the project admins.</p>
+<p><strong>Development</strong>
+The development branch is a staging area for work that is intended for the next release. Development is a protected branch that can only be modified by the project admins.</p>
+<p><strong>Feature Branches</strong>
+Intended for new feature development. They use the naming convention <code>feature/{name}</code>.</p>
+<p><strong>Hotfix Branches</strong>
+Intended for critical bug fixes. They use the naming convention <code>hotfix/{name}</code>.</p>
+<hr>
+<h3>Submitting a Merge Request</h3><p>When your work is complete, submit a <a href="https://gitlab.etrade.com/prototype-team/ETrade-Bootstrap/merge_requests">Merge Request</a></p>
+<p>Merge Request Do&#39;s:</p>
+<ol>
+<li>Update <code>CHANGELOG.md</code> with your updates.
+*. Delete the <code>/dist</code> directory before you submit your merge request. This makes it easier for project admins to do a code review.</li>
+</ol>
+<p>Merge Request Don&#39;ts:</p>
+<ol>
+<li>Bump the version number in <code>package.json</code>.<br>*. Create a <a href="http://semver.org/">semver</a> tag for your update.</li>
+</ol>
+<hr>
+<h2>Misc.</h2><h4>Managing checking in compiled CSS</h4><p>We&#39;re using <a href="http://blog.andrewray.me/dealing-with-compiled-files-in-git/">this approach</a> to manage compiled CSS in git. You have to go through this on your own development machine, as most of the steps here are changes to files that can&#39;t actually be checked in via git.</p>
+      </main>
+    <script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script title="Bootstrap CDN" src="http//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/tearsheet.js"></script>
+  </body>
+</html>

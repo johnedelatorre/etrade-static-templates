@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tearsheet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/etrade-bootstrap/dist/css/etrade-bootstrap.css">
+    <link rel="stylesheet" href="css/tearsheet.css">
+  </head>
+  <body>
+    <div class='wizard clearfix'><!-- /.container -->
+      <header class="nav-wrapper">
+  <nav class="inner-wrapper">
+    <a href="http://etrade.com" class="logo">E*TRADE</a>
+    <div class="steps">
+      <p class="step-indicator"><span>Question <span class="current-page-number">8</span><span class="total-page-number">9</span></span></p>
+      <div class="active"></div>
+      <div class="active"></div>
+      <div class="active"></div>
+      <div class="active"></div>
+      <div class="active"></div>
+      <div class="active"></div>
+      <div class="active"></div>
+      <div class="active"></div>
+      <div></div>
+      <div class="major"><span>Result</span></div>
+      <div class="major"><span>Open an Account</span></div>
+      <div class="major"><span>Fund</span></div>
+    </div>
+    <div class="contact">
+      <a href="#" target="_blank" class="icon-faq"><span>FAQ</span></a>
+      <a href="tel:888-639-4353" class="icon-call"><span>Call Us 888-639-4353</span></a>
+      <button class="icon-chat no-style"><span>Chat Online</span></button>
+    </div>
+  </nav>
+</header>
+      <main class="page-wrapper clearfix">        
+        <h1>E*Trade Bootstrap</h1><p>This version of Bootstrap has been customized and formatted to fit the E*TRADE brand and style guidelines. In fact, it&#39;s become the source of the style guidlines, as we build sites in code and not in Jpegs.</p>
+<p>Documentation is in the <code>docs</code> folder, and all of that is generated into a styleguide visible at [<a href="http://styleguide.etradecreative.com">http://styleguide.etradecreative.com</a>] user: client password: Race2015!</p>
+<h2>Installation</h2><p>Ideally this package should be a bower component, which pulls in its dependencies for development. However, you should be able to use this just by pointing at the <code>css/etrade-bootstrap.css</code> file, with the <code>fonts</code> folder and its contents as a sibling to the <code>css</code> folder. (This will allow the icon font to work). The CSS is compiled for every tagged release, so you don&#39;t have to recompile the source <code>.scss</code> files.</p>
+<h2>Developing with other projects</h2><p>You can use the <code>bower link</code> command to create a symlink to this repo when working in other projects so that you can see how the changes you make to this project affect other projects that have it as a bower dependency.</p>
+<p>To accomplish this</p>
+<ol>
+<li>Clone this repo to your local machine</li>
+<li>From inside the project directory run <code>$ bower link</code></li>
+<li>Run <code>gulp watch</code> inside this project to start watching for changes</li>
+<li>From any project that has this project as a dependency, run <code>$ bower link etrade-bootstrap</code></li>
+<li>Any changes you make in this project will be reflected in the target project until the next time you run <code>bower update</code></li>
+</ol>
+<hr>
+      </main>
+      <footer>  
+  <button class='btn btn-primary next' disabled>Next</button> 
+  <div class="navigation">  
+    <div class="inner-wrapper">
+      <button class="back no-style"><span class="et-icon-chevron-circle-left"></span><span class="btn-text">Back</span></button>
+      <button class="question no-style"><span class="btn-text">Why are we asking this?</span><span class="et-icon-circle-question"></span></button> 
+
+      <div class="flyout-wrapper">
+        <div class="flyout-top-right pull-right">
+
+          <div class="popover top-right">
+            <div class="arrow"></div>
+            <div class="popover-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consequat ipsum eget sem ullamcorper gravida. Fusce tempus eget nulla et porttitor. Donec a nibh non nisl malesuada imperdiet eu congue nunc. Ut arcu dolor, sodales sed sem eget, molestie accumsan ex. </p>
+            </div>
+            <button class="close" aria-label="close"><span aria-hidden="true">×</span><span class="sr-only">Dismiss</span></button>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>    
+  <div class="disclaimer">
+  <div class="inner-wrapper">
+    <button class="no-style read-more disclosures">Disclaimer</button>
+    <p class="hidden-content disclosures">Diversification and Asset Allocation do not ensure profit or protect against loss in declining markets. Investors should assess their own investment needs based on their own financial circumstances and investment objectives.</p>
+    <button class="no-style read-more details">Read More</button>
+    <p class="hidden-content details hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit eleifend enim, sit amet semper ipsum ullamcorper sed. Duis porta neque id lacus iaculis tincidunt. Vivamus varius nulla in ultrices pharetra. Vestibulum sed consectetur lacus. Quisque mollis quam sed ligula sagittis, a efficitur neque eleifend. Ut non pharetra urna. Phasellus bibendum lorem eget sem blandit, in luctus lacus...</p>
+  </div>
+</div>
+</footer>
+
+    </div>
+    <script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/tearsheet.js"></script>
+    <script src="../js/disclaimer.js"></script>
+  </body>
+</html>

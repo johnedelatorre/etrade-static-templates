@@ -1,0 +1,44 @@
+{
+    "smUser": "XXXX",
+    "sysdate": 1407874088988,
+    "data": {
+        "pollInterval": 10000,
+        "ETLabsFlag": false,
+        "isPlatinum": false,
+        "CurrentTime": "August 12, 2014 04:08 PM ET",
+        "IndexQuotes": [{
+            "symbol": "DJIND",
+            "symbolDescription": "DOW JONES INDUSTRIAL AVERAGE",
+            "exchangeCode": "CINC",
+            "lastPrice": "16560.540000",
+            "change": "-9.440000",
+            "percentChange": "-0.06",
+            "timeOfLastTrade": 1407874080
+        }, {
+            "symbol": "COMP.IDX",
+            "symbolDescription": "NASDAQ COMPOSITE INDEX (COMB)",
+            "exchangeCode": "CINC",
+            "lastPrice": "4389.251000",
+            "change": "-12.080000",
+            "percentChange": "-0.27",
+            "timeOfLastTrade": 1407874080
+        }, {
+            "symbol": "SPX",
+            "symbolDescription": "CBOE S&P 500 INDEX S&P 500",
+            "exchangeCode": "NSDQ",
+            "lastPrice": "1933.750000",
+            "change": "-3.170000",
+            "percentChange": "-0.16",
+            "timeOfLastTrade": 1407874080
+        }],
+        "isExecutive": false,
+        "TCCARD_CUST": "0",
+        "homeUrl": "https://sit.etrade.com/e/t/accounts/accountscombo",
+        "TMORT_CUST": "0",
+        "UnreadAlertsCount": 1
+    },
+    "hostName": "139w80m7",
+    "message_type": null,
+    "message_info": null,
+    "success": true
+}

@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ReadMe</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../bower_components/etrade-bootstrap/dist/css/etrade-bootstrap.css">
+    <style>
+      h1,h2,h3,h4,h5,h6{
+        font-weight: bold;
+      }
+      h2{
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+      h3{
+        margin-bottom: 12px;
+      }
+      h4{
+        margin-bottom: 8px;
+      }
+      .panel-body li{
+        list-style-type: none;
+      }
+      a.major{
+        display: block;
+        margin-top: 5px;
+        font-weight: bold;
+      }
+      a.minor{
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class='container'>
+        <div class='row'> 
+          <div class='col-md-4 col-md-push-8'>       
+            <nav class='panel panel-default'>
+              <ul id='nav' class='panel-body'>
+              </ul>
+            </nav>
+          </div>
+          <div class='col-md-8 col-md-pull-4 '>       
+            <h2>Getting started</h2><h3>Installing dependencies</h3><ul>
+<li><code>npm install -g harp@0.15.2</code></li>
+<li><code>npm install -g bower</code></li>
+</ul>
+<blockquote>
+<p><strong>Note</strong> there is an issue with the current versions of harp &amp; node. Specifying harp v0.15.2 resolves the issue  </p>
+</blockquote>
+<h3>Getting the project</h3><ol>
+<li>Clone the repo.  </li>
+<li>Copy <code>public/robo-advisor</code> folder to its own diectory. You don&#39;t need anything else from the tearsheets repo.</li>
+</ol>
+<h4>What&#39;s included</h4><pre><code>├── bower.json
+├── dist                        // harp compiles here from src
+├── package.json                // includes npm scripts to run &amp; compile the project
+├── src/_partials               // global markup partials (disclaimer, footer, etc)
+├── src/bower_components        // Etrade Bootstrap is the only dependency
+├── src/calculation             // the calculation interstitial btwn wizard &amp; results
+├── src/css                     // the .scss
+├── src/fonts                   // ETrade Fort
+├── src/img                     
+├── src/index.ejs
+├── src/js                      
+├── src/result                  // result pages
+└── src/wizard                  // wizard pages
+</code></pre><hr>
+<h3>Running the project</h3><p>The source code uses <a href="http://harpjs.com/">harp</a>, an easy to use static site generator. Harp compiles .ejs into .html and .scss into .css. It has layout and partial conventions that make it easy to reuse code.</p>
+<p>Use these scripts from <code>package.json</code> to run and build the project.</p>
+<ul>
+<li><code>npm start</code> - will install your bower deps and start a <a href="http://harpjs.com/docs/environment/server">harp server</a> on port 8080. harp compiles .ejs and .scss as you work so no need to watch/compile anything.</li>
+<li><code>npm run build</code> - will compile your <code>src</code> to a <code>dist</code> folder and zip dist into a <code>download.zip</code> file.</li>
+</ul>
+<h4>harp conventions worth knowing.</h4><p><strong><a href="http://harpjs.com/docs/development/layout">layouts</a></strong>
+<strong><a href="http://harpjs.com/docs/development/partial">partials</a></strong></p>
+<hr>
+<h2>CSS</h2><p>Original sass files can be found in <code>src/css</code>.  </p>
+<p>The main .scss file is <code>src/css/tearsheet.scss</code>. All other .scss files are imported from here.  </p>
+<hr>
+<h2>The Wizard</h2><p>The <code>src/wizard</code> directory includes tearsheets for 8 of the wizard questions.</p>
+<hr>
+<h2>The Calculation Page</h2><p>The <code>src/calculation</code> directory includes 1 tearsheet for the calculation interstitial view that appears in-between the wizard and results pages.</p>
+<hr>
+<h2>The Results View</h2><p>The <code>src/result</code> directory includes 8 tearsheets for the results view.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src='js/code.snippet.js'></script>
+    <script>
+     (function(){
+       var nav = document.getElementById('nav');
+       document.addEventListener('DOMContentLoaded', function(){
+         var elements = document.querySelectorAll('h2,h3');
+         var html = '';
+         function makeName(el){
+            return el.textContent.replace(/ /g,'-');
+         }
+         Array.prototype.forEach.call(elements, function(el, i){
+           var _class = el.tagName === 'H2' ? 'major' : 'minor';
+           html += '<li><a class='+_class+' href="#'+makeName(el)+'">'+el.textContent+'</a></li>';
+           el.insertAdjacentHTML('beforebegin', '<a name="'+makeName(el)+'"></a>');
+         });
+         nav.innerHTML = html;
+       });
+     })();
+    </script>
+  </body>
+</html>

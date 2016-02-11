@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tearsheet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../bower_components/etrade-bootstrap/dist/css/etrade-bootstrap.css">
+    <link rel="stylesheet" href="../css/tearsheet.css">
+  </head>
+  <body>
+    <div class='wizard clearfix'><!-- /.container -->
+      <header class="nav-wrapper">
+  <nav class='inner-wrapper'>
+    <a href='#' class='logo'><h1>E*TRADE Robo Advisory</h1></a>
+    <div class='steps'>
+      <div class='step-indicator'><span>Question <span class='current-page-number'>8</span><span class='total-page-number'>9</span></span></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class='major'><span>Result</span></div>
+      <div class='major'><span>Open an Account</span></div>
+      <div class='major'><span>Fund</span></div>
+    </div>
+    <div class='contact'>
+      <button class='icon-save no-style'><span>Save for Later</span></button>
+      <a href='tel:888-639-4353' class='icon-call'><span>Call Us 888-639-4353</span></a>
+      <button class='icon-chat no-style'><span>Chat Online</span></button>
+    </div>
+  </nav>
+</header>
+      <main class="page-wrapper clearfix">        
+        <div class="cards clearfix calculation">
+  <div class="step-indicator"><span>Question <span class="current-page-number">8</span><span class="total-page-number">9</span></span></div> <!-- step indicator for mobile -->
+  <div class="option-wrapper clearfix">
+    <div class="hex">
+      <div class="triangle-wrapper">
+        
+            <div class="triangle t1"></div>
+        
+            <div class="triangle t2"></div>
+        
+            <div class="triangle t3"></div>
+        
+            <div class="triangle t4"></div>
+        
+            <div class="triangle t5"></div>
+        
+            <div class="triangle t6"></div>
+        
+        <!-- <div class="timer">0</div> -->
+      </div>
+    </div>
+    <h1>Calculating Your Risk Profile</h1>
+  </div>
+</div>
+
+<style>
+  .navigation,
+  .btn.next {
+    visibility: hidden;
+  }
+</style>
+
+<script>
+  
+// triangles for calculation hex
+function calculateResults() {
+var d = document;
+var rgba = [ 
+  '187, 230, 15, 0.84',
+  '149, 217, 3, 0.84',
+  '110, 190, 74, 0.84',
+  '25, 145, 219, 0.84',
+  '68, 59, 255, 0.84',
+  '46, 55, 81, 0.84'];
+
+function rotateRgba(){
+  var newRgba = rgba.shift();
+  rgba.push(newRgba);
+
+  d.querySelector('.t1').style.borderLeftColor = 'rgba(' + rgba[5] + ')';
+  d.querySelector('.t2').style.borderRightColor = 'rgba(' + rgba[4] + ')';
+  d.querySelector('.t3').style.borderLeftColor = 'rgba(' + rgba[3] + ')';
+  d.querySelector('.t4').style.borderRightColor = 'rgba(' + rgba[2] + ')';
+  d.querySelector('.t5').style.borderLeftColor = 'rgba(' + rgba[1] + ')';
+  d.querySelector('.t6').style.borderRightColor = 'rgba(' + rgba[0] + ')';
+}
+
+var count = 0;
+var counterIncrement =+ 1;
+var counter = setInterval(timer, 80); 
+var newColor = setInterval(rotateRgba, 90);
+
+function timer() {
+  count = count+counterIncrement;
+  if (count == 100 ) {
+      clearInterval( counter );
+      clearInterval( newColor );
+    }
+  d.querySelector('.timer').innerHTML = count;
+}
+
+// fallback
+setTimeout(function() { clearInterval( newColor ); }, 3000);
+setTimeout(function() { clearInterval( counter ); }, 10000);
+}
+
+  calculateResults();
+</script>
+        <div class="disclaimer">
+  <div class="inner-wrapper">
+    <p>Disclaimer</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit eleifend enim, sit amet semper ipsum ullamcorper sed. Duis porta neque id lacus iaculis tincidunt. Vivamus varius nulla in ultrices pharetra. Vestibulum sed consectetur lacus. Quisque mollis quam sed ligula sagittis, a efficitur neque eleifend. Ut non pharetra urna. Phasellus bibendum lorem eget sem blandit, in luctus lacus...</p>
+    <button class="no-style read-more">Read More</button>
+    <p class="hide hidden-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit eleifend enim, sit amet semper ipsum ullamcorper sed. Duis porta neque id lacus iaculis tincidunt. Vivamus varius nulla in ultrices pharetra. Vestibulum sed consectetur lacus. Quisque mollis quam sed ligula sagittis, a efficitur neque eleifend. Ut non pharetra urna. Phasellus bibendum lorem eget sem blandit, in luctus lacus...</p>
+  </div>
+</div>
+      </main>      
+      <footer>  
+  <button class='btn btn-primary next' disabled>Next</button> 
+  <div class="navigation">  
+    <div class="inner-wrapper">
+      <button class="back no-style"><span class="et-icon-chevron-circle-left"></span>Back</button>
+      <button class="question no-style"><span>Why are we asking this?</span><span class="et-icon-circle-question"></span></button>               
+      <div class="footer-popup">
+        <p><button class="et-icon-cancelx no-style"></button>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consequat ipsum eget sem ullamcorper gravida. Fusce tempus eget nulla et porttitor. Donec a nibh non nisl malesuada imperdiet eu congue nunc. Ut arcu dolor, sodales sed sem eget, molestie accumsan ex. </p>
+        <span class="footer-triangle"></span>
+      </div>        
+    </div>
+  </div>    
+  <div class="disclaimer">
+  <div class="inner-wrapper">
+    <p>Disclaimer</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit eleifend enim, sit amet semper ipsum ullamcorper sed. Duis porta neque id lacus iaculis tincidunt. Vivamus varius nulla in ultrices pharetra. Vestibulum sed consectetur lacus. Quisque mollis quam sed ligula sagittis, a efficitur neque eleifend. Ut non pharetra urna. Phasellus bibendum lorem eget sem blandit, in luctus lacus...</p>
+    <button class="no-style read-more">Read More</button>
+    <p class="hide hidden-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit eleifend enim, sit amet semper ipsum ullamcorper sed. Duis porta neque id lacus iaculis tincidunt. Vivamus varius nulla in ultrices pharetra. Vestibulum sed consectetur lacus. Quisque mollis quam sed ligula sagittis, a efficitur neque eleifend. Ut non pharetra urna. Phasellus bibendum lorem eget sem blandit, in luctus lacus...</p>
+  </div>
+</div>
+</footer>
+
+    </div>
+    <script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script title="Bootstrap CDN" src="http//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="../js/tearsheet.js"></script>
+  </body>
+</html>

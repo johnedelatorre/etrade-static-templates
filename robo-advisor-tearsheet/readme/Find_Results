@@ -1,0 +1,207 @@
+Searching 42 files for "url(../img"
+
+/Users/jleonar2/Projects/tearsheets/public/robo-advisor/src/css/_header-nav.scss:
+    7  
+    8    .logo {
+    9:     background-image: url(../img/icons/etrade-capital-management.svg);
+   10      background-repeat: no-repeat;
+   11      background-position: left center;
+
+/Users/jleonar2/Projects/tearsheets/public/robo-advisor/src/css/_icons-goal.scss:
+    6    &.selected .retirement.active,  
+    7    &.selected .retirement.active :hover {
+    8:     background-image: url(../img/retirement-white.svg);
+    9    } 
+   10  
+   ..
+   12    &.selected .retirement:not(.active),   
+   13    &.selected .retirement:not(.active):hover  {
+   14:     background-image: url(../img/retirement-blue.svg);
+   15    }
+   16  
+   ..
+   22    &.selected .house.active,  
+   23    &.selected .house.active :hover {
+   24:     background-image: url(../img/house-white.svg);
+   25    } 
+   26  
+   ..
+   28    &.selected .house:not(.active),   
+   29    &.selected .house:not(.active):hover { 
+   30:     background-image: url(../img/house-blue.svg);
+   31    }
+   32  
+   ..
+   38    &.selected .education.active,  
+   39    &.selected .education.active :hover {
+   40:     background-image: url(../img/education-white.svg);
+   41    } 
+   42  
+   ..
+   44    &.selected .education:not(.active),   
+   45    &.selected .education:not(.active):hover { 
+   46:     background-image: url(../img/education-blue.svg);
+   47    }
+   48  
+   ..
+   54    &.selected .growth.active,  
+   55    &.selected .growth.active :hover {
+   56:     background-image: url(../img/growth-white.svg);
+   57    } 
+   58  
+   ..
+   60    &.selected .growth:not(.active),   
+   61    &.selected .growth:not(.active):hover { 
+   62:     background-image: url(../img/growth-blue.svg);
+   63    }
+   64  
+   ..
+   70    &.selected .other.active,  
+   71    &.selected .other.active :hover {
+   72:     background-image: url(../img/other-white.svg);
+   73    } 
+   74  
+   ..
+   76    &.selected .other:not(.active),   
+   77    &.selected .other:not(.active):hover { 
+   78:     background-image: url(../img/other-blue.svg);
+   79    }
+   80  }
+
+/Users/jleonar2/Projects/tearsheets/public/robo-advisor/src/css/_q1-images.scss:
+    6    &.selected .retirement.active,  
+    7    &.selected .retirement.active :hover {
+    8:     background-image: url(../img/retirement-white.svg);
+    9    } 
+   10  
+   ..
+   12    &.selected .retirement:not(.active),   
+   13    &.selected .retirement:not(.active):hover  {
+   14:     background-image: url(../img/retirement-blue.svg);
+   15    }
+   16  
+   ..
+   22    &.selected .house.active,  
+   23    &.selected .house.active :hover {
+   24:     background-image: url(../img/house-white.svg);
+   25    } 
+   26  
+   ..
+   28    &.selected .house:not(.active),   
+   29    &.selected .house:not(.active):hover { 
+   30:     background-image: url(../img/house-blue.svg);
+   31    }
+   32  
+   ..
+   38    &.selected .education.active,  
+   39    &.selected .education.active :hover {
+   40:     background-image: url(../img/education-white.svg);
+   41    } 
+   42  
+   ..
+   44    &.selected .education:not(.active),   
+   45    &.selected .education:not(.active):hover { 
+   46:     background-image: url(../img/education-blue.svg);
+   47    }
+   48  
+   ..
+   54    &.selected .growth.active,  
+   55    &.selected .growth.active :hover {
+   56:     background-image: url(../img/growth-white.svg);
+   57    } 
+   58  
+   ..
+   60    &.selected .growth:not(.active),   
+   61    &.selected .growth:not(.active):hover { 
+   62:     background-image: url(../img/growth-blue.svg);
+   63    }
+   64  
+   ..
+   70    &.selected .other.active,  
+   71    &.selected .other.active :hover {
+   72:     background-image: url(../img/other-white.svg);
+   73    } 
+   74  
+   ..
+   76    &.selected .other:not(.active),   
+   77    &.selected .other:not(.active):hover { 
+   78:     background-image: url(../img/other-blue.svg);
+   79    }
+   80  }
+
+/Users/jleonar2/Projects/tearsheets/public/robo-advisor/src/css/_q1.scss:
+   85  
+   86      .calc {
+   87:       background-image: url(../img/icons/icon-calculation.svg);
+   88        background-position: right;
+   89        background-repeat: no-repeat;
+
+/Users/jleonar2/Projects/tearsheets/public/robo-advisor/src/css/_q9-images.scss:
+    6    &.selected .strongly-disagree.active,  
+    7    &.selected .strongly-disagree.active :hover {
+    8:     background-image: url(../img/strongly-disagree-white.svg);
+    9    } 
+   10  
+   ..
+   12    &.selected .strongly-disagree:not(.active),   
+   13    &.selected .strongly-disagree:not(.active):hover  {
+   14:     background-image: url(../img/strongly-disagree-blue.svg);
+   15    }
+   16  
+   ..
+   22    &.selected .disagree.active,  
+   23    &.selected .disagree.active :hover {
+   24:     background-image: url(../img/disagree-white.svg);
+   25    } 
+   26  
+   ..
+   28    &.selected .disagree:not(.active),   
+   29    &.selected .disagree:not(.active):hover { 
+   30:     background-image: url(../img/disagree-blue.svg);
+   31    }
+   32  
+   ..
+   38    &.selected .somewhat-agree.active,  
+   39    &.selected .somewhat-agree.active :hover {
+   40:     background-image: url(../img/somewhat-agree-white.svg);
+   41    } 
+   42  
+   ..
+   44    &.selected .somewhat-agree:not(.active),   
+   45    &.selected .somewhat-agree:not(.active):hover { 
+   46:     background-image: url(../img/somewhat-agree-blue.svg);
+   47    }
+   48  
+   ..
+   54    &.selected .agree.active,  
+   55    &.selected .agree.active :hover {
+   56:     background-image: url(../img/agree-white.svg);
+   57    } 
+   58  
+   ..
+   60    &.selected .agree:not(.active),   
+   61    &.selected .agree:not(.active):hover { 
+   62:     background-image: url(../img/agree-blue.svg);
+   63    }
+   64  
+   ..
+   70    &.selected .strongly-agree.active,  
+   71    &.selected .strongly-agree.active :hover {
+   72:     background-image: url(../img/strongly-agree-white.svg);
+   73    } 
+   74  
+   ..
+   76    &.selected .strongly-agree:not(.active),   
+   77    &.selected .strongly-agree:not(.active):hover { 
+   78:     background-image: url(../img/strongly-agree-blue.svg);
+   79    }
+   80  }
+
+/Users/jleonar2/Projects/tearsheets/public/robo-advisor/src/css/_result-aside.scss:
+  273  .header-item.active:after {
+  274      content: '';
+  275:     background-image: url(../img/results/active-state-risk-profile.png);
+  276      width: 36px;
+  277      height: 44px;
+
+33 matches across 6 files

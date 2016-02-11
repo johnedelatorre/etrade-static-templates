@@ -1,0 +1,13 @@
+/*Importants because of the order in which they get imported. These should go away by the time it's in prodution anyway.*/
+
+@media screen and (min-width: 1200px){
+  #bella-nav .menubar{
+    width: 1027px !important;
+  }
+  #bella-nav .megamenu, #bella-nav .megamenu .tray, #bella-nav .globalnav{
+    width: 1170px !important;
+  }
+  #bella-nav .menubar > a.menu{
+    padding: 0 39px !important;
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "ETrade Design System",
+  "version": "1.0.4",
+  "authors": [
+    "Alan Mooiman <alan.mooiman@etrade.com>"
+  ],
+  "description": "An E*TRADE CSS framework based off Bootstrap",
+  "main": "dist/css/etrade-bootstrap.css",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "docs",
+    "src"
+  ],
+  "devDependencies": {
+    "bootstrap-sass-official": "~3.2.0"
+  }
+}

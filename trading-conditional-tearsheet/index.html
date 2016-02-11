@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tearsheet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/etrade-bootstrap/dist/css/etrade-bootstrap.css">
+    <link rel="stylesheet" href="css/tearsheet.css">
+  </head>
+  <body>
+    <main class='container'><!-- /.container -->
+      <div class="row">
+    <div class="col-md-2">
+        <div class="et-select-wrapper">
+            <select name="orderType">
+                <option value="buy">One-Triggers-OCO</option>
+                <option value="sell">Sell</option>
+                <option value="sell-short">Sell Short</option>
+                <option value="buy-to-cover">Buy to Cover</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <a class="infolink-conditional" href="">Which Conditional ticket should I choose</a>
+    </div>
+</div>
+<!-- CONDITIONAL 1 -->
+<div class="row">
+    <div class="col-md-12 conditional-step">
+        <h2 class="panel-title">Step 1: If the following order executes in full</h2>
+    </div>
+</div>
+<div class="row flex">
+    <div class="col-md-8">
+        <img style="margin-left:-10px" class="visible-md-block" src="images/stock-ticket-md.jpg" alt="placeholder only">
+        <img style="margin-left:-10px" class="visible-lg-block" src="images/stock-ticket-lg.jpg" alt="placeholder only">
+    </div>
+    
+    <div class="col-md-4 workspace">    
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="col-xs-12">
+                    <ul class="nav nav-pills nav-pills-sm nav-justified">
+                        <li class="active"><a href="#">Snapshot</a></li>
+                        <li><a href="#">Positions (23)</a></li>
+                        <li><a href="#">Open Orders (9)</a></li>
+                    </ul>
+                    <div class="snapshot-symbol">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" class="tertiary text-left">Exxon Mobile Corp Com</td>
+                                    <td class="text-muted text-right">XOM: NYSE</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                                
+                        <div class="row snapshot-symbol-data">
+                            <div class="col-xs-6">
+                                <table class="data-primary">
+                                    <thead>
+                                        <tr>
+                                        <th>Last Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td class="secondary">7.475</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                        <td class="text-left">+$0.3651 (+5.14%)</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                </div>
+                                <div class="col-xs-6">
+                                    <table class="data-secondary">
+                                        <tbody>
+                                            <tr>
+                                                <th colspan="2" width="100">Bid (Size)</th>
+                                                <td class="text-right">7.47</td>
+                                                <td class="text-right">(x24,700)</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2">Ask (Size)</th>
+                                                <td class="text-right">7.48</td>
+                                                <td class="text-right">(x24,100)</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2">Volume</th>
+                                                <td>&nbsp;</td>
+                                            <td class="text-right">32.62M</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-default">Show Stock Detail</button>
+                <p><time class="disclaimer">As of 02:39 PM ET 4/15/15</time></p>
+                <p>
+                    <span class="disclaimer">15-Minute Delayed Quotes </span>
+                    <a href="">Upgrade to Real-Time Quotes</a>
+                </p>
+                <a href="">View Margin Maintenace Requirement</a>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!-- CONDITIONAL 2 -->
+<div class="row">
+    <div class="col-md-12 conditional-step-2">
+        <h2 class="panel-title">Step 2: Then execute the following One-Cancel-Other (OCO) order(s)</h2>
+    </div>
+</div>
+<div class="row flex">
+    <div class="col-md-8">
+        <img style="margin-left:-10px" class="visible-md-block" src="images/stock-ticket-md.jpg" alt="placeholder only">
+        <img style="margin-left:-10px" class="visible-lg-block" src="images/stock-ticket-lg.jpg" alt="placeholder only">
+    </div>
+    
+    <div class="col-md-4 workspace">    
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="col-xs-12">
+                    <ul class="nav nav-pills nav-pills-sm nav-justified">
+                        <li class="active"><a href="#">Snapshot</a></li>
+                        <li><a href="#">Positions (23)</a></li>
+                        <li><a href="#">Open Orders (9)</a></li>
+                    </ul>
+                    <div class="snapshot-symbol">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" class="tertiary text-left">Exxon Mobile Corp Com</td>
+                                    <td class="text-muted text-right">XOM: NYSE</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                                
+                        <div class="row snapshot-symbol-data">
+                            <div class="col-xs-6">
+                                <table class="data-primary">
+                                    <thead>
+                                        <tr>
+                                        <th>Last Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td class="secondary">7.475</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                        <td class="text-left">+$0.3651 (+5.14%)</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                </div>
+                                <div class="col-xs-6">
+                                    <table class="data-secondary">
+                                        <tbody>
+                                            <tr>
+                                                <th colspan="2" width="100">Bid (Size)</th>
+                                                <td class="text-right">7.47</td>
+                                                <td class="text-right">(x24,700)</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2">Ask (Size)</th>
+                                                <td class="text-right">7.48</td>
+                                                <td class="text-right">(x24,100)</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2">Volume</th>
+                                                <td>&nbsp;</td>
+                                            <td class="text-right">32.62M</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-default">Show Stock Detail</button>
+                <p><time class="disclaimer">As of 02:39 PM ET 4/15/15</time></p>
+                <p>
+                    <span class="disclaimer">15-Minute Delayed Quotes </span>
+                    <a href="">Upgrade to Real-Time Quotes</a>
+                </p>
+                <a href="">View Margin Maintenace Requirement</a>
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!-- CONDITIONAL 3 -->
+<div class="row">
+    <div class="col-md-12 conditional-step-3">
+        <h2 class="panel-title">OR</h2>
+    </div>
+</div>
+<div class="row flex">
+    <div class="col-md-8">
+        <img style="margin-left:-10px" class="visible-md-block" src="images/stock-ticket-md.jpg" alt="placeholder only">
+        <img style="margin-left:-10px" class="visible-lg-block" src="images/stock-ticket-lg.jpg" alt="placeholder only">
+    </div>
+    
+    <div class="col-md-4 workspace">    
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="col-xs-12">
+                    <ul class="nav nav-pills nav-pills-sm nav-justified">
+                        <li class="active"><a href="#">Snapshot</a></li>
+                        <li><a href="#">Positions (23)</a></li>
+                        <li><a href="#">Open Orders (9)</a></li>
+                    </ul>
+                    <div class="snapshot-symbol">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" class="tertiary text-left">Exxon Mobile Corp Com</td>
+                                    <td class="text-muted text-right">XOM: NYSE</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                                
+                        <div class="row snapshot-symbol-data">
+                            <div class="col-xs-6">
+                                <table class="data-primary">
+                                    <thead>
+                                        <tr>
+                                        <th>Last Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td class="secondary">7.475</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                        <td class="text-left">+$0.3651 (+5.14%)</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                </div>
+                                <div class="col-xs-6">
+                                    <table class="data-secondary">
+                                        <tbody>
+                                            <tr>
+                                                <th colspan="2" width="100">Bid (Size)</th>
+                                                <td class="text-right">7.47</td>
+                                                <td class="text-right">(x24,700)</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2">Ask (Size)</th>
+                                                <td class="text-right">7.48</td>
+                                                <td class="text-right">(x24,100)</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="2">Volume</th>
+                                                <td>&nbsp;</td>
+                                            <td class="text-right">32.62M</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-default">Show Stock Detail</button>
+                <p><time class="disclaimer">As of 02:39 PM ET 4/15/15</time></p>
+                <p>
+                    <span class="disclaimer">15-Minute Delayed Quotes </span>
+                    <a href="">Upgrade to Real-Time Quotes</a>
+                </p>
+                <a href="">View Margin Maintenace Requirement</a>
+            </div> 
+        </div>
+    </div>
+</div>
+    </main>
+    <script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script title="Bootstrap CDN" src="http//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/tearsheet.js"></script>
+  </body>
+</html>

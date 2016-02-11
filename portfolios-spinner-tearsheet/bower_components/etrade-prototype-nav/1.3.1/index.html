@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bella Navigation</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #variant-select {
+        margin: 1em auto;
+        width: 960px;
+      }
+
+      #variant-select label {
+        display: block;
+        font-family: monospace;
+      }
+    </style>
+    <script type="text/javascript"> 
+     var etBellaNavToken= 'NAV_L0ZjS1YvMmF1ODhXbmFZaURRU1J5SWhOZ3N0L3dMZTJsZXlUUDFPTmo3NElycURiK2FhOE1hKy9FYnljYnIzWmU5WDJWdz09';
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bella-port-en_US-debug.js"></script>
+    <!--script src="https://cdn.sit.etrade.net/1/69123116000.0/et360/skins/bella-nav/bella-en_US.min.js"></script-->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font: 13px "Arial", sans-serif;
+      }
+      .wrap {
+        width:960px;
+        margin: 0 auto;
+      }
+      .rightrail iframe {
+        display:none !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--script>var etBellaNavToken = "00123";</script-->
+    <div id="bella-nav" style="height:120px;background:#000"></div>
+
+    <div class="wrap">
+    <p>Current Version 1.3.1</p>
+    <h1>Change log:</h1>
+    <h2><a href="/1.3.1/">1.3.1</a></h2>
+    <ul>
+      <li>Changed 2nd level tab Individual Retirement Accounts to Individual Retirement Accounts (IRAs)</li>
+      <li>Removed Small Business Resource Center in Small Business Plans tab</li>
+    </ul>
+    <br>
+    <h2><a href="/1.3.0/">1.3.0</a></h2>
+    <ul>
+      <li>Updated default height for each group of menu items from 366 to 230</li>
+      <li>Disabled rightrail for menus that have a lot of items</li>
+      <li>Reorganized tall menus into three columns</li>
+      <li>Removed hover on indices</li>
+      <li>Styled percent change and change to float right of indices</li>
+      <li>Give 15px left margin to all indices</li>
+      <li>Changed DOW and S&amp;P indices to positive to reflect green proof-of-concept</li>
+      <li>Moved Research > Products to the right column</li>
+      <li>Moved Retirement Small Business Plans to center column</li>
+      <li>Conditionally add an additional 10px or 30px to the tabHeight for additional padding at the bottom depending if there is 5 or more menu items in .menus</li>
+    </ul>
+    <br>
+    <h2><a href="/1.2.5/">1.2.5</a></h2>
+    <ul>
+      <li>Changed Fixed Income Solutions label to Bonds &amp; Fixed Income Solutions</li>
+    </ul>
+    <br>
+    <h2><a href="/1.2.4/">1.2.4</a></h2>
+    <ul>
+      <li>Added "All Account Records"</li>
+    </ul>
+    <br>
+    <h2><a href="/1.2.3/">1.2.3</a></h2>
+    <ul>
+      <li>Changed IPOs to IPOs & Other New Issues</li>
+    </ul>
+    <br>
+    <h2><a href="/1.2.2/">1.2.2</a></h2>
+    <ul>
+      <li>Changed Security Settings to Security &amp; Passwords</li>
+    </ul>
+    <br>
+    <h2><a href="/1.2.1/">1.2.1</a></h2>
+    <ul>
+      <li>In Research tab, updated Educational Overview to Education</li>
+      <li>Added Commentary &amp; Insights as last item in Education</li>
+      <li>In Trade tab, Trade Status menu, moved Portfolio to the last position</li>
+    </ul>
+    <br>
+    <h2><a href="/1.2.0/">1.2.0</a></h2>
+    <ul>
+      <li>Implemented correct single column widths in middle section of navigation</li>
+      <li>Implemented new left nav style
+        <ul>
+          <li>#eee background color instead of #000 background color</li>
+          <li>#2d2d2d for font color</li>
+          <li>#99cc00 border left on selected h3 left nav item</li>
+          <li>border-bottom color changed to #d8d8d8</li>
+          <li>added the triangle caret using the h3 before pseudo element</li>
+        </ul>
+      </li>
+      <li>Removed additional top border in the tray when megamenu is open</li>
+      <li>Added a top border to the tray when megamenu is closed</li>
+      <li>Removed inset box shadow from all panels in megamenu</li>
+      <li>Removed down carets from first level of megamenu</li>
+      <li>Lined up first h4 in middle column of nav to the first tab text</li>
+
+      <li>Added a container to separate "All [option]" links from their respective sections</li>
+        <ul>
+          <li>Added container keys with a boolean value to the JS object for menu items</li>
+          <li>If set to true, it will wrap in a div with class bottom-container</li>
+        </ul>
+      <li>Make right panel background white</li>
+      <li>Changed Tax Center title header to Tax Records in Tax &amp; Account Records section</li>
+      <li>Added Tax Center as the first link in Tax &amp; Account Records section</li>
+      <li>Added a space between Individual Retirement Account and (IRAs)</li>
+      <li>Fixed typos in Trade menu
+        <ul>
+          <li>Place A Trade -> Place a Trade</li>
+          <li>Place A Conditional Trade -> Place a Conditional Trade</li>
+        </ul>
+      </li>
+      <li>Implemented indices change on hover to percent change with % symbol</li>
+      <li>Updated red alerts notification number to be on the left instead of the right</li>
+      <li>Fixed height of tray and adjusted some padding in the anchor tags inside tray</li>
+      <li>Updated touch animation to be more in line with desktop</li>
+      <li>Tapping twice on the same first level menu item now closes the megamenu</li>
+      <li>Remove bold from indices</li>
+      <li>Use color from data-color in indices
+        <ul>
+          <li>Changed purple color to #cc0099</li>
+        </ul>
+      </li>
+      <li>Changed hover intent setTimeout delay to 60ms from 85ms</li>
+      <li>Halved the slide/animate time from default 400ms to 150ms</li>
+      <li>Changed top border color of tray to #242427 from #575759</li>
+    </ul>
+    <br>
+    <h2><a href="/1.1.6/">1.1.6</a></h2>
+    <ul>
+      <li>Added css rule "outline: 0 none;" to #bella-nav a to fix outline problem in IE</li>
+    </ul>
+    <br>
+    <h2><a href="/1.1.5/">1.1.5</a></h2>
+    <ul>
+      <li>Removed bottom arrow pointing up on the main tabs</li>
+      <li>Applied the green arrow pointing down to the selected class</li>
+    </ul>
+    <br>
+    <h2><a href="/1.1.4/">1.1.4</a></h2>
+    <ul>
+      <li>Updated codebase with UAT version of bella-nav</li>
+      <li>Increased the amount of time of "hoverIntent" from 50 to 85 for better effect</li>
+      <li>Implemented $tempCurrent on line 2236, 2250, and 2278 for removal of ".current" on hover of the other nav items</li>
+    </ul>
+    <br>
+    <h2><a href="/1.1.3/">1.1.3</a></h2>
+    <ul>
+      <li>Added URLs to megamenu object for top level menu items (Accounts, Research, Retirement)</li>
+      <li>Replaced the current URLs of javascript:void 0 to the URLs defined in the megamenu object</li>
+      <li>Commented out console.log('closed'); in closeFlyouts() function definition</li>
+      <li>Changed navigation interaction from click to hover</li>
+      <li>Added hoverIntent to the sub menu inside the mega drop down</li>
+      <li>Because hoverIntent hijacks events, initial showing of first submenu items had to be manually initialized/shown instead of relying on .trigger('mouseover')</li>
+    </ul>
+    <br>
+    <h2><a href="/1.1.2/">1.1.2</a></h2>
+    <ul>
+      <li>Global Nav utility links null state color from #c0c0c0 to #D8D8D8</li>
+      <li>Symbol &amp; Search field null state background colors from #4d4d4d to #5B5B5B</li>
+      <li>Symbol &amp; Search field text null state colors from #8c8a8a to #CCCCCC</li>
+      <li>Indices market name text null state color from #c0c0c0 to #898989</li>
+      <li>Indices market value text null state color from #7c7c7c to #CCCCCC </li>
+      <li>Move Money &amp; Alerts text null state color from #c0c0c0 to #D8D8D8</li>
+    </ul>
+  </div>
+  </body>
+</html>

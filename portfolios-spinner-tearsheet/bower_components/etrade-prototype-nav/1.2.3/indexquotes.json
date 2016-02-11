@@ -1,0 +1,36 @@
+{
+    "smUser": "XXXX",
+    "sysdate": 1407873934706,
+    "data": {
+        "CurrentTime": "August 12, 2014 04:05 PM ET",
+        "IndexQuotes": [{
+            "symbol": "DJIND",
+            "symbolDescription": "DOW JONES INDUSTRIAL AVERAGE",
+            "exchangeCode": "CINC",
+            "lastPrice": "16560.540000",
+            "change": "-9.440000",
+            "percentChange": "-0.06",
+            "timeOfLastTrade": 1407873900
+        }, {
+            "symbol": "COMP.IDX",
+            "symbolDescription": "NASDAQ COMPOSITE INDEX (COMB)",
+            "exchangeCode": "CINC",
+            "lastPrice": "4389.251000",
+            "change": "-12.080000",
+            "percentChange": "-0.27",
+            "timeOfLastTrade": 1407873900
+        }, {
+            "symbol": "SPX",
+            "symbolDescription": "CBOE S&P 500 INDEX S&P 500",
+            "exchangeCode": "NSDQ",
+            "lastPrice": "1933.740000",
+            "change": "-3.180000",
+            "percentChange": "-0.16",
+            "timeOfLastTrade": 1407873900
+        }]
+    },
+    "hostName": "139w80m7",
+    "message_type": null,
+    "message_info": null,
+    "success": true
+}

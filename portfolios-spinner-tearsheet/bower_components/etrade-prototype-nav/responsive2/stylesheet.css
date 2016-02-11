@@ -1,0 +1,354 @@
+.hamburglar-options {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  font: 12px Arial;
+}
+
+#bella-nav .menubar > a.logo{
+  background-image: url('etrade-RGB-ko.svg');
+  background-size: 100%;
+  padding-left: 143px;
+}
+.log-out-wrapper{
+  background: #242424;
+  text-align: center;
+}
+.log-out{
+  background: #6633CC;
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  padding: .5em 0;
+  width: 95%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.log-out:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.hamburglar-options .contact{
+  padding: 12px 1em 13px;
+  font-size: 12px;
+  color: #a9a9a9;
+  background: #242424;
+}
+.hamburglar-options .call{
+  width: 82%;
+  display: inline-block;
+}
+
+.hamburglar-options .close-menu{
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.hamburglar-options .mobile-nav{
+  margin: 0;
+}
+
+.wrap {
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  width: auto;
+}
+/*#header, .wrap, #wrapper{
+  left: 0;
+  transition: all .25s;
+  position: relative;
+}*/
+/*.search-open #bella-nav div.etsearch{
+    display: block;
+}  */
+/*#bella-nav a[data-id="responsive-nav-item"],
+#bella-nav .menubar > a.menu,
+#bella-nav .menubar > a.menu + a {
+  display: none;
+}
+*/
+@media(max-width:966px){
+  #bella-nav, #bella-nav .megamenu, #bella-nav .megamenu .tray, #bella-nav .globalnav{
+    min-width: 0;
+    width: 100%;
+  }
+  #bella-nav a[data-id="responsive-nav-item"],
+  #bella-nav .menubar > a.menu,
+  #bella-nav .menubar > a.menu + a,
+  #bella-nav .globalnav .logout,
+  #bella-nav .globalnav .phone{
+    display: none;
+  }
+  .hamburglar{
+    background: url("img/menu_icon_white.svg") 100% no-repeat;
+    cursor: pointer;
+    height: 27px;
+    width: 30px;
+    background-size: contain;
+    display: inline-block;
+  }
+  #bella-nav .hamburglar{
+    position: absolute;
+    display: block;
+    top: 17px;
+  }
+  #bella-nav .menubar{
+    width: 94%;
+    padding: 0;
+  }
+  #bella-nav .menubar > a.logo {
+    margin-left: 45px;
+  }
+  .hamburglar-options {
+    transition: all .25s;
+    position: absolute;
+    left: -261px;
+    z-index: 1001;
+    top: 81px;
+  }
+  .responsive-slide .hamburglar-options{
+    width: 259px;
+    left: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  .responsive-slide #wrapper {
+    overflow-x: hidden;
+  }
+  .responsive-slide .wrap{
+    overflow: hidden;
+    height: 100%;
+  }
+  #bella-nav .hamburglar, #bella-nav .hamburglar:before, #bella-nav .hamburglar:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 25px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 500ms ease-in-out;
+}
+
+#bella-nav .hamburglar {
+  top: 25px;
+}
+
+#bella-nav .hamburglar:before, #bella-nav .hamburglar:after {
+  transition: all 500ms ease-in-out;
+}
+
+#bella-nav .active.hamburglar {
+  background-color: transparent;
+}
+
+#bella-nav .active.hamburglar:before, #bella-nav .active.hamburglar:after {
+  top: 0;
+  bottom: auto;
+}
+
+#bella-nav .active.hamburglar:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#bella-nav .active.hamburglar:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#bella-nav .hamburglar:before {
+  top: -6px;
+}
+#bella-nav .hamburglar:after {
+  bottom: -6px; 
+}
+}
+
+@media (min-width:968px){
+  .hamburglar-options{
+    display: none;
+  }
+}
+
+@media (max-width: 690px){
+  .tray > a{
+    display: none;
+  }
+}
+
+@media (max-width: 540px){
+  #bella-nav{
+    background: #242427 !important;
+  }
+  #bella-nav .globalnav{
+    display: none;
+  }
+  #bella-nav .background{
+    top: 0;
+    height: 51px;
+  }
+  #bella-nav{
+    height: auto !important;
+  }
+  #bella-nav .megamenu, #bella-nav .tray{
+    display: none !important;
+  }
+  #bella-nav div.etsearch{
+    display: none;
+    top: 53px;
+    padding: 5px 0;
+    width: 100%;
+    float: none;
+    background: #242427;
+    position: absolute;
+    box-sizing: border-box;
+  }
+  #bella-nav .menubar > a.logo {
+    margin-left: calc(50% - 71px);
+  }
+
+  .search-open #bella-nav div.etsearch{
+    display: block;
+  }
+  .search-open #bella-nav .menubar{
+    height: 90px;
+  }
+  .search-open #bella-nav div.etsearch:before,
+  .search-open #bella-nav div.etsearch:after{
+    content: "";
+    display: table;
+  }
+  .search-open #bella-nav div.etsearch:after{
+    clear: both;
+  }
+  .responsive-slide .wrap, .responsive-slide .container{
+    position: relative;
+    /*top: 51px;*/
+  }
+  .responsive-slide #bella-nav{
+    /*position: absolute;*/
+    top: 0;
+    width: 100%;
+  }
+  .hamburglar-options{
+    top: 51px;
+  }
+
+  #bella-nav .search{
+    display: block;
+  }
+  #bella-nav .search-trigger{
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIxMjMuMjc1cHgiIGhlaWdodD0iMTMwLjg5NXB4IiB2aWV3Qm94PSIwIDAgMTIzLjI3NSAxMzAuODk1IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjMuMjc1IDEzMC44OTUiCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxjaXJjbGUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIGN4PSI1NS4yOSIgY3k9IjU1LjI5IiByPSI0NS4yOSIvPgo8bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMjAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgeDE9Ijc3LjUxNiIgeTE9Ijg1LjEzNiIgeDI9IjExNi4yMDQiIHkyPSIxMjMuODI0Ii8+Cjwvc3ZnPg==") 100% no-repeat;
+    width: 20px;
+    height: 21px;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    display: block;
+    background-size: contain;
+  }
+  .etsearch .symbol{
+    /*Magic numbers based on buttons on rest of line elements*/
+    width: calc(100% - 59px);
+  }
+  #bella-nav div.etsearch .search{
+    display: none;
+    /*width: calc(50% - 39px);*/
+  }
+   #bella-nav .search + .text-go-btn{
+    display: none;
+  }
+  /*This is crazy. We need to have better selectors.*/
+  #bella-nav div.etsearch .symbol input.searchsymbol{
+    width: 100%;
+    margin: 0;
+
+  }
+  #bella-nav div.etsearch .search input.searchtext{
+    width: calc(100% - 43px);
+    margin: 0;
+  }
+}
+
+.hamburglar-options .sect-header{
+  color: #808080;
+  font-size: 12px;
+}
+
+.hamburglar-options ul{
+  padding: 0;
+  list-style-type: none;
+  line-height: 37px;
+}
+
+.hamburglar-options .section{
+  background: #eee;
+  font-size: 15px;
+  line-height: 1.75;
+}
+.hamburglar-options .subsection-item{
+  border-bottom: 1px solid #dbdbdb;
+}
+.hamburglar-options .subsection-item:first-child{
+  border-top: 1px solid #dbdbdb;
+}
+.hamburglar-options .subsections{
+  background: #fff;
+  font-weight: normal;
+}
+.hamburglar-options .subsection-item .et-icon-chevron-right:before{
+  color: #c0c0c0;
+  font-size: 14px;
+}
+.hamburglar-options .subsection-item.expanded{
+  background: #99cc00;
+  color: white;
+}
+.hamburglar-options .subsection-item.expanded .et-icon-chevron-right:before{
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  color: white;
+}
+.hamburglar-options .sect-title{
+  width: 89%;
+  display: inline-block;
+}
+.hamburglar-options .sect-pages a{
+  font-size: 13px;
+  text-decoration: none;
+  color: #444;
+}
+.hamburglar-options .sect-pages{
+  margin: 0 -1em;
+  padding: 0 2em;
+  background-color: white;
+}
+.hamburglar-options .sect-header, .hamburglar-options .subsection-item{
+  padding: 0 1em;
+}
+
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}

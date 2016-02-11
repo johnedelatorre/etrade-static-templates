@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tearsheet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/etrade-bootstrap/dist/css/etrade-bootstrap.css">
+    <link rel="stylesheet" href="css/tearsheet.css">
+  </head>
+  <body>
+    <div class='wizard clearfix'><!-- /.container -->
+      <header class="nav-wrapper">
+  <nav class="inner-wrapper">
+    <a href="http://etrade.com" class="logo">E*TRADE</a>
+    <div class="steps">
+      <p class="step-indicator"><span>Question <span class="current-page-number">8</span><span class="total-page-number">9</span></span></p>
+      <div class="active"></div>
+      <div class="active"></div>
+      <div class="active"></div>
+      <div class="active"></div>
+      <div class="active"></div>
+      <div class="active"></div>
+      <div class="active"></div>
+      <div class="active"></div>
+      <div></div>
+      <div class="major"><span>Result</span></div>
+      <div class="major"><span>Open an Account</span></div>
+      <div class="major"><span>Fund</span></div>
+    </div>
+    <div class="contact">
+      <a href="#" target="_blank" class="icon-faq"><span>FAQ</span></a>
+      <a href="tel:888-639-4353" class="icon-call"><span>Call Us 888-639-4353</span></a>
+      <button class="icon-chat no-style"><span>Chat Online</span></button>
+    </div>
+  </nav>
+</header>
+      <main class="page-wrapper clearfix">        
+        <h1>Contributing</h1><h2>Contrbuting to the Styleguide</h2><h3>Installing prequisite software</h3><ul>
+<li><code>npm install -g harp@0.15.2</code></li>
+<li><code>npm install -g bower</code></li>
+</ul>
+<blockquote>
+<p><strong>Note</strong> there is an issue with the current versions of harp &amp; node. Installing harp v0.15.2 resolves the issue</p>
+</blockquote>
+<hr>
+<h3>Running the styleguide locally</h3><p><code>npm run develop</code><br>This will install the <code>bower</code> dependencies and start the harp server. <a href="http://harpjs.com/docs/environment/server">Harp&#39;s server</a> watches any <code>.scss, .less, .md, .ejs, .jade, etc.</code> files and compiles them on the fly.</p>
+<hr>
+<h3>Editing the styleguide</h3><p>Other than bootstrap &amp; bootstrap&#39;s jquery dependency, the styleguide is framework/library agnostic. The small amount of .js in the guide is written in native javascript.</p>
+<p>The styleguide is a static website built with <a href="http://harpjs.com/">harpjs</a>. It uses <code>.scss</code> for <code>.css</code> and <code>.ejs</code> for html layouts and partials.</p>
+<h4>harp conventions worth knowing.</h4><p><strong><a href="http://harpjs.com/docs/development/layout">layouts</a></strong> </p>
+<p><strong><a href="http://harpjs.com/docs/development/partial">partials</a></strong></p>
+<p><strong><a href="http://harpjs.com/docs/development/metadata">metadata</a></strong></p>
+<hr>
+<h2>Working with Git</h2><p>E*Trade Bootstrap lives in our internal <a href="http://gitlab.etrade.com/">gitlab</a> instance. We use an adaptation of the <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Git Flow</a> workflow to manage our branches in a sane way, and allow for code reviews, as well as having one place to manage conversations about components that is close to the code.</p>
+<h3>Naming convention for branches</h3><p><strong>Master</strong>
+Master is the main release branch and always reflects the production ready version of the project. Master is a protected branch that can only be modified by the project admins.</p>
+<p><strong>Development</strong>
+The development branch is a staging area for work that is intended for the next release. Development is a protected branch that can only be modified by the project admins.</p>
+<p><strong>Feature Branches</strong>
+Intended for new feature development. They use the naming convention <code>feature/{name}</code>.</p>
+<p><strong>Hotfix Branches</strong>
+Intended for critical bug fixes. They use the naming convention <code>hotfix/{name}</code>.</p>
+<hr>
+<h3>Submitting a Merge Request</h3><p>When your work is complete, submit a <a href="https://gitlab.etrade.com/prototype-team/ETrade-Bootstrap/merge_requests">Merge Request</a></p>
+<p>Merge Request Do&#39;s:</p>
+<ol>
+<li>Update <code>CHANGELOG.md</code> with your updates.
+*. Delete the <code>/dist</code> directory before you submit your merge request. This makes it easier for project admins to do a code review.</li>
+</ol>
+<p>Merge Request Don&#39;ts:</p>
+<ol>
+<li>Bump the version number in <code>package.json</code>.<br>*. Create a <a href="http://semver.org/">semver</a> tag for your update.</li>
+</ol>
+<hr>
+<h2>Misc.</h2><h4>Managing checking in compiled CSS</h4><p>We&#39;re using <a href="http://blog.andrewray.me/dealing-with-compiled-files-in-git/">this approach</a> to manage compiled CSS in git. You have to go through this on your own development machine, as most of the steps here are changes to files that can&#39;t actually be checked in via git.</p>
+      </main>
+      <footer>  
+  <button class='btn btn-primary next' disabled>Next</button> 
+  <div class="navigation">  
+    <div class="inner-wrapper">
+      <button class="back no-style"><span class="et-icon-chevron-circle-left"></span><span class="btn-text">Back</span></button>
+      <button class="question no-style"><span class="btn-text">Why are we asking this?</span><span class="et-icon-circle-question"></span></button> 
+
+      <div class="flyout-wrapper">
+        <div class="flyout-top-right pull-right">
+
+          <div class="popover top-right">
+            <div class="arrow"></div>
+            <div class="popover-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consequat ipsum eget sem ullamcorper gravida. Fusce tempus eget nulla et porttitor. Donec a nibh non nisl malesuada imperdiet eu congue nunc. Ut arcu dolor, sodales sed sem eget, molestie accumsan ex. </p>
+            </div>
+            <button class="close" aria-label="close"><span aria-hidden="true">×</span><span class="sr-only">Dismiss</span></button>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>    
+  <div class="disclaimer">
+  <div class="inner-wrapper">
+    <button class="no-style read-more disclosures">Disclaimer</button>
+    <p class="hidden-content disclosures">Diversification and Asset Allocation do not ensure profit or protect against loss in declining markets. Investors should assess their own investment needs based on their own financial circumstances and investment objectives.</p>
+    <button class="no-style read-more details">Read More</button>
+    <p class="hidden-content details hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit eleifend enim, sit amet semper ipsum ullamcorper sed. Duis porta neque id lacus iaculis tincidunt. Vivamus varius nulla in ultrices pharetra. Vestibulum sed consectetur lacus. Quisque mollis quam sed ligula sagittis, a efficitur neque eleifend. Ut non pharetra urna. Phasellus bibendum lorem eget sem blandit, in luctus lacus...</p>
+  </div>
+</div>
+</footer>
+
+    </div>
+    <script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/tearsheet.js"></script>
+    <script src="../js/disclaimer.js"></script>
+  </body>
+</html>

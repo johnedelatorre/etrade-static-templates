@@ -1,0 +1,106 @@
+<!doctype>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+<head><script async="" src="https://sit.etrade.com/skins/bella/js/opinionlab/oo_engine.min.js?_=1385134671211"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsify!</title> 
+    <!-- CSS For Nav -->
+    <link rel="stylesheet" href="https://cdn.sit.etrade.net/1/13101412260.0/et360/skins/bella/css/bella-skin.min.css">
+    <script src="https://cdn.sit.etrade.net/1/13101412260.0/et360/skins/bella/js/bella-skin.min.js"></script>
+    <!-- JS For Nav -->
+    <script>//var etBellaNavToken= "uovRFytvKUDrfJF+6wRS3UPqjCXo8xXLxTaWv8sZSoEhL0wWRe8gk4EjFa+pVKco7CXS0w==";</script>
+    <!-- script src="https://cdn.sit.etrade.net/1/69123116000.0/et360//skins/bella-nav/bella-en_US.min.js"></script-->
+    
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+.wrap {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.rightrail iframe {
+  display:none !important;
+}
+
+</style>
+<script src="jquery.js"></script>
+<script src="jquery.transit.js"></script>
+<script src="bella-debug-en_US.js"></script>
+<link rel="stylesheet" href="stylesheet.css">
+</head>
+
+
+<!--Do Not Edit Body Class-->
+<body class="et-header-present">
+<div id="wrapper">
+  <!--Do Not Edit These Items-->
+  <div id="header">
+    <div id="bella-nav" style="height:120px;background:#000">
+      <div class="background">
+        <div class="tray"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    
+    <h1 class="change-log">Change log:</h1>
+    <h2><a href="http://etradecreative.com/prototypes/bellanav/bella-nav-new-responsive/">Responsive</a></h2>
+    <ul>
+      <li>Widened to 1280px</li>
+      <li>Minimum width of 768px</li>
+      <li>Don't display the symbol and search forms if too small</li>
+    </ul>
+    <br>
+    <h2><a href="http://etradecreative.com/prototypes/bellanav/bella-nav-new-1.1.5/">1.1.5</a></h2>
+    <ul>
+      <li>Removed bottom arrow pointing up on the main tabs</li>
+      <li>Applied the green arrow pointing down to the selected class</li>
+    </ul>
+    <br>
+    <h2><a href="http://etradecreative.com/prototypes/bellanav/bella-nav-new-1.1.4/">1.1.4</a></h2>
+    <ul>
+      <li>Updated codebase with UAT version of bella-nav</li>
+      <li>Increased the amount of time of "hoverIntent" from 50 to 85 for better effect</li>
+      <li>Implemented $tempCurrent on line 2236, 2250, and 2278 for removal of ".current" on hover of the other nav items</li>
+    </ul>
+    <br>
+    <h2><a href="http://etradecreative.com/prototypes/bellanav/bella-nav-new-1.1.3/">1.1.3</a></h2>
+    <ul>
+      <li>Added URLs to megamenu object for top level menu items (Accounts, Research, Retirement)</li>
+      <li>Replaced the current URLs of javascript:void 0 to the URLs defined in the megamenu object</li>
+      <li>Commented out console.log('closed'); in closeFlyouts() function definition</li>
+      <li>Changed navigation interaction from click to hover</li>
+      <li>Added hoverIntent to the sub menu inside the mega drop down</li>
+      <li>Because hoverIntent hijacks events, initial showing of first submenu items had to be manually initialized/shown instead of relying on .trigger('mouseover')</li>
+    </ul>
+    <br>
+    <h2><a href="http://etradecreative.com/prototypes/bellanav/bella-nav-new-1.1.2/">1.1.2</a></h2>
+    <ul>
+      <li>Global Nav utility links null state color from #c0c0c0 to #D8D8D8</li>
+      <li>Symbol &amp; Search field null state background colors from #4d4d4d to #5B5B5B</li>
+      <li>Symbol &amp; Search field text null state colors from #8c8a8a to #CCCCCC</li>
+      <li>Indices market name text null state color from #c0c0c0 to #898989</li>
+      <li>Indices market value text null state color from #7c7c7c to #CCCCCC </li>
+      <li>Move Money &amp; Alerts text null state color from #c0c0c0 to #D8D8D8</li>
+    </ul>
+  </div>
+
+<script>
+  $(document).ready(function() {
+    $(".hamburglar" ).on("click", function() {
+      $(this).toggleClass("active");
+      $('body').toggleClass("responsive-slide");
+    });
+  });
+</script>
+</div>
+</body>
+</html>

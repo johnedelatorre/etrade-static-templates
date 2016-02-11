@@ -1,0 +1,89 @@
+/*************************************************************************************
+Additional Ticket Screens CSS
+**************************************************************************************/
+
+/*framework overrides*/
+.default .tab-container {min-height: 268px;}
+.trade-preview .tab-container {min-height: 268px;}
+.trade-confirm .tab-container {min-height: 333px;}
+.well {min-height:246px;}
+.preview-panel {
+	float:left;
+	width:47%;
+}
+.widget-header {height:49px;}
+
+
+
+
+/*custom ticket styles*/
+.preview-panel h2 {
+	color: #232323;
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: bold;
+	margin: 20px 0 0 16px;
+}
+.preview-panel section {
+	padding-bottom:15px;
+}
+.preview-panel .left {
+	margin:10px 0 0 18px;
+}
+.preview-panel .left.order-detail {
+	margin-left:72px;
+}
+.preview-panel .right {
+	margin:6px 0 0 13px;
+}
+.preview-panel .label {
+	text-align:right;
+	margin: 0 0 3px 0;
+}
+.preview-panel .value {
+	text-align:left;
+	font-size:13px;
+	margin: 0 0 1px 0;
+}
+.preview-panel .row {
+	clear:both;
+}
+.trading-preview .btn.left {
+	float:left;
+}
+.trading-preview .btn.first {
+	margin-left:15px;
+}
+.meta {
+	padding-top:57px;
+}
+.confirm-alert {
+	background:#fefbcd;
+	padding: 0 0 1px 0;
+	border-bottom:1px solid #d6d6d6;
+}
+.confirm-alert img {
+	margin: 3px 0 3px 12px;
+}
+
+.widget-well .aside {
+	background-color:#f8f8f8;
+	height:208px;
+	width:70%;
+	float:right;
+	padding: 60px 0 0 0;
+}
+
+.widget-well .aside .btn {
+	display:block;
+	width:150px;
+	text-align:center;
+	margin: 0 auto 18px auto;
+}
+
+
+
+
+
+
+

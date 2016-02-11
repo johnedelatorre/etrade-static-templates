@@ -1,0 +1,16 @@
+{
+    "smUser": "XXXX",
+    "sysdate": 1407875423782,
+    "data": {
+        "AlertsInbox": {
+            "alertsList": [],
+            "totalAlertsCount": 3,
+            "numberOfAlerts": 1
+        },
+        "UnreadAlertsCount": 1
+    },
+    "hostName": "139w80m7",
+    "message_type": null,
+    "message_info": null,
+    "success": true
+}

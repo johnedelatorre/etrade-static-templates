@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tearsheet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/etrade-bootstrap/dist/css/etrade-bootstrap.css">
+    <link rel="stylesheet" href="css/tearsheet.css">
+  </head>
+  <body>
+    <main class='container'><!-- /.container -->
+      <h2>Getting started</h2><h3>Installing dependencies</h3><ul>
+<li><code>npm install -g harp@0.15.2</code></li>
+<li><code>npm install -g bower</code></li>
+</ul>
+<blockquote>
+<p><strong>Note</strong> there is an issue with the current versions of harp &amp; node. Specifying harp v0.15.2 resolves the issue  </p>
+</blockquote>
+<h3>Getting the project</h3><ol>
+<li>Clone the repo.  </li>
+<li>Copy <code>public/trading-conditional</code> folder to its own diectory. You don&#39;t need anything else from the tearsheets repo.</li>
+</ol>
+<h4>What&#39;s included</h4><pre><code>├── bower.json
+├── dist                        // harp compiles here from src
+├── package.json                // includes npm scripts to run &amp; compile the project
+├── src/bower_components        // Etrade Bootstrap is the only dependency
+├── src/css                     // the .scss
+├── src/fonts                   // ETrade Fort
+├── src/images                  // FPO images   
+├── src/js                      
+└── src/index.ejs               // the conditional markup
+</code></pre><hr>
+<h3>Running the project</h3><p>The source code uses <a href="http://harpjs.com/">harp</a>, an easy to use static site generator. Harp compiles .ejs into .html and .scss into .css. It has layout and partial conventions that make it easy to reuse code.</p>
+<p>Use these scripts from <code>package.json</code> to run and build the project.</p>
+<ul>
+<li><code>npm start</code> - will install your bower deps and start a <a href="http://harpjs.com/docs/environment/server">harp server</a> on port 8080. harp compiles .ejs and .scss as you work so no need to watch/compile anything.</li>
+<li><code>npm run build</code> - will compile your <code>src</code> to a <code>dist</code> folder and zip dist into a <code>download.zip</code> file.</li>
+</ul>
+<h4>harp conventions worth knowing.</h4><p><strong><a href="http://harpjs.com/docs/development/layout">layouts</a></strong>
+<strong><a href="http://harpjs.com/docs/development/partial">partials</a></strong></p>
+<hr>
+<h2>CSS</h2><p>Original sass files can be found in <code>src/css</code>.  </p>
+<p>The main .scss file is <code>src/css/tearsheet.scss</code>. All other .scss files are imported from here.  </p>
+<hr>
+<h2>Javascript</h2><hr>
+<h2>The tearsheets</h2><h3>Trading Conditional (One Triggers - OCO)</h3><p>The <code>src/index</code> directory includes tearsheets for One Triggers - OCO only.</p>
+    </main>
+    <script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script title="Bootstrap CDN" src="http//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/tearsheet.js"></script>
+  </body>
+</html>

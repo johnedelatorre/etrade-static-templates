@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tearsheet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/etrade-bootstrap/dist/css/etrade-bootstrap.css">
+    <link rel="stylesheet" href="css/tearsheet.css">
+  </head>
+  <body>
+    <main class='container'><!-- /.container -->
+      <div class="panel">
+    <div class="row symbol flex">
+        <div class="col-xs-5 col-sm-3 col-md-2">
+            <label for="symbol">Symbol <span class="et-icon-help after"></span></label>
+            <input type="text" class="form-control" name="symbol" value="PBR" placeholder="Symbol">
+        </div>
+        <div class="col-xs-7">
+            <h4 class="voffset1">Petroleo Basiliero Sa Petrobr Sponsored Adr</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2">
+            <label for="orderType">Select a Strategy</label>
+            <div class="et-select-wrapper">
+                <select name="orderType">
+                    <option value="iron-butterfly">Iron Butterfly</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-2">
+            <label for="orderType">Chain</label>
+            <div class="et-select-wrapper">
+                <select name="orderType">
+                    <option value="buy">Calls &amp; Puts</option>
+                    <option value="sell">Sell</option>
+                    <option value="sell-short">Sell Short</option>
+                    <option value="buy-to-cover">Buy to Cover</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-xs-3 col-sm-1">
+            <label for="shares">Strikes</label>
+            <div class="et-select-wrapper">
+                <select name="orderType">
+                    <option value="buy">7</option>
+                    <option value="sell">Sell</option>
+                    <option value="sell-short">Sell Short</option>
+                    <option value="buy-to-cover">Buy to Cover</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-xs-3 col-sm-1">
+            <label for="shares">Near</label>
+            <input class="form-control" name="shares" value="7.55">
+        </div>
+    </div>
+</div>
+
+<div class="panel-body purchase-table">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="nav text-center">
+                <div class="pagination">
+                    <a class="page et-icon-double-angle-left text-left nav-arrows-left disabled" href="#"></a> <a class="page" href="#">Apr 17'15</a> <a class="page" href="#">Apr 24'15</a> <a class="page" href="#">Apr 17'15</a> <a class="page active" href="#">May 1'15</a> <a class="page" href="#">May 8'15</a> <a class="page" href="#">May 15'15</a>
+                    <a class="page et-icon-double-angle-right text-right nav-arrows-right" href="#"></a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <strong>Calls</strong>
+        </div>
+        <div class="col-md-6 text-center">
+            <strong>Puts</strong>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-responsive table-sorter">
+    <thead>
+        <tr>
+        <th>Open Interest</th>
+        <th>Volume</th>
+        <th>Net Change</th>
+        <th>Last</th>
+        <th>Bid</th>
+        <th>Ask</th>
+        <th><div class="sort-arrow-up sg-icon et-icon-chevron-up"></div></th>
+        <th>Ask</th>
+        <th>Bid</th>
+        <th>Last</th>
+        <th>Net Change</th>
+        <th>Volume</th>
+        <th>Open Interest</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td>1.01</td>
+            <td class="gray-lighter">1.06</td>
+            <td class="gray-lighter">1.06</td>
+            <td class="gray-lighter">1.06</td>
+            <td class="gray-lighter">1.06</td>
+            <td class="gray-lighter">1.06</td>
+            <td class="gray-lighter">0.91</td>
+        </tr>
+        <tr>
+            <td class="lightblue">1.06</td>
+            <td class="lightblue">1.06</td>
+            <td class="lightblue">1.06</td>
+            <td class="lightblue">1.06</td>
+            <td class="lightblue">1.55</td>
+            <td class="lightblue">1.55</td>
+            <td>1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+        </tr>
+        <tr>
+            <td class="lightblue">0.91</td>
+            <td class="lightblue">0.91</td>
+            <td class="lightblue">0.91</td>
+            <td class="lightblue">0.91</td>
+            <td class="lightblue">0.91</td>
+            <td class="lightblue">1.06</td>
+            <td>1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="brand-green">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+        </tr>
+        <tr>
+            <td class="lightblue">0.46</td>
+            <td class="lightblue">0.46</td>
+            <td class="lightblue">0.46</td>
+            <td class="lightblue">0.46</td>
+            <td class="brand-danger">0.46</td>
+            <td class="lightblue">0.56</td>
+            <td>1.01</td>
+            <td class="brand-danger">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+        </tr>
+        <tr>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="brand-green">1.01</td>
+            <td>1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+        </tr>
+        <tr>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td>1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+        </tr>
+        <tr>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td>1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+        </tr>
+        <tr>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td class="gray-lighter">1.01</td>
+            <td>1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+            <td class="lightblue">1.01</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;
+                </th><th><div class="sort-arrow-down sg-icon et-icon-chevron-down"></div></th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+            </tr>
+        </tfoot>
+    </tbody>
+</table>
+            <div class="col-md-12">
+                <time> As of 02:39 PM ET 4/15/15 </time>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel-body">
+    <div class="row">
+        <form class="panel">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-2">
+                    <div class="panel panel-default clearfix">
+                        <span class="pull-left text-muted">Bid: <span class="price-bid"> $0.91 </span></span>
+                        <span class="pull-right">Credit</span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-2">
+                    <div class="panel panel-accent clearfix">
+                        <span class="pull-left text-muted">Ask: <span class="price-bid"> $0.91 </span></span>
+                        <span class="pull-right">Debit</span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-2">
+                    <div class="panel panel-default clearfix">
+                        <span class="pull-left text-muted">Midpoint: <span class="price-bid"> $0.91 </span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row voffset2">
+                <div class="col-sm-22 col-md-2">
+                    <label for="symbol">Price Type <span class="et-icon-help after"></span></label>
+                    <div class="et-select-wrapper">
+                        <select name="orderType">
+                            <option value="buy">Market</option>
+                            <option value="sell">Sell</option>
+                            <option value="sell-short">Sell Short</option>
+                            <option value="buy-to-cover">Buy to Cover</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="row">
+                <div class="col-md-2">
+                    <span class="label">Term</span>
+                    <div class="et-select-wrapper">
+                        <select>
+                        <option value="good-for-the-day">Good for the Day</option>
+                        <option value="good-for-sixty-days">Good for 60 Days</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-2 voffset2">
+                    <div class="checkbox large">
+                        <input class="large" type="checkbox" id="all-or-none">
+                        <label class="text-muted" for="all-or-none">All-or-none (if 300+) <span class="et-icon-help after"></span></label>
+                    </div>
+                </div>
+                <div class="col-md-2 voffset2">
+                    <div class="checkbox large">
+                        <input class="large" type="checkbox" id="check-1">
+                        <label class="text-muted" for="all-or-none">Overnight Hold</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row voffset2">
+                <div class="col-sm-12 col-md-6">
+                    <ul class="list-inline panel-highlight">
+                        <li>Est. Commission $7.99</li>
+                        <li>Est. Fees $0.02</li>
+                        <li>Est. Total Cost $1,607.99</li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="pull-right voffset3">
+                        <span class="text-muted text-right">Review your order before placing the order &nbsp; </span>
+                        <button class="btn btn-success">Preview</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <p class="form-fine-print">
+                    By using conditional orders, you acknowledge that you have read and understand the risks and advantages of these order types. <a href="#"> Learn more </a>. Margin maintenance requirements have changed on certain highly volatile stocks. This may affect your margin purchasing power. <a href="#"> See complete list</a>. E*TRADE Securities LLC reserves the right to reject market orders, block size orders and orders for securities traded in a thin market. <a href="#"> Learn more </a>.
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+    </main>
+    <script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script title="Bootstrap CDN" src="http//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/tearsheet.js"></script>
+  </body>
+</html>

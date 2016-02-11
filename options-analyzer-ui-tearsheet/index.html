@@ -1,0 +1,641 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tearsheet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/etrade-bootstrap.css">
+    <!-- <link rel="stylesheet" href="bower_components/etrade-bootstrap/dist/css/etrade-bootstrap.css"> -->
+    <link rel="stylesheet" href="css/tearsheet.css">
+  </head>
+  <body>
+    <main class='container'>
+      <div class="row">
+    <header class="page-header quote-header">
+        <div class="row">
+            <!-- page refresh -->
+            <div class="page-refresh">
+                <span class="et-icon-refresh">
+            Last Refresh <time datetime="1970-01-01 05:00">January, 01, 1970 5:00 AM ET</time>
+            </span>
+        </div>
+    </div>
+    <!-- page title -->
+    <div class="row">
+        <div class="col-xs-12 col-md-7">
+            <h2 class="page-title">Options Analyzer</h2>
+            <p class="voffset3">Use this tool to graph your options positions, create strategies, and analyze possible outcomes.<br>Begin by entering a symbol.</p>
+        </div>
+        <div class="col-xs-12 col-md-5 pull-right text-right control voffset3">
+            <span href="" class="et-icon-help after text-muted">Help</span>
+            <span href="" class="et-icon-print after text-muted">Print</span>
+            <!-- <span href="" class="et-icon-download after text-muted">Download</span> -->
+            <!-- <span href="" class="et-icon-settings after text-muted">Settings</span> -->
+        </div>
+        <div class="col-xs-12 col-md-5 pull-right text-right control voffset3">
+            <a href="#" class="pull-right">Options Level 4</a>
+        </div>
+    </div>
+    <div class="row voffset2">
+        <div class="col-xs-6 col-md-4 col-lg-3">
+            <div class="et-select-wrapper">
+                <select name="account" id="account">
+                    <option value="1">Your Brokerage Account - 5855</option>
+                    <option value="2">Another Account - 6766</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Enter symbol">
+                <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">Add</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="quote-bar row">
+        <div class="clearfix">
+            <div class="col-xs-12 col-md-6">
+                <h1 class="page-title">PowerShares Trust <span>QQQ: NASDAQ</span></h1>
+                <ul class="list-horizontal vertical-offset-2">
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Software &amp; Programming</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+            <div class="row">
+                <div class="col-xs-auto">
+                    <span class="label">Last Price</span>
+                    <p class="primary-data-point">$23.45</p>
+                </div>
+                <div class="col-xs-auto">
+                    <span class="label">Today's Change</span>
+                    <p class="primary-data-point pos">+$0.445 (+1.68%)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="time">As of <time>3:49PM ET 3/26/14</time><br>
+                    15 minute delayed quotes</div>
+                    <a href="#" style="padding-left: 10px">Upgrade to Real-Time Quotes</a>
+                </div>
+                <div class="col-xs-12 col-md-7">
+                </div>
+    </div>
+</div>
+<div class="col-xs-auto">
+    <span class="label">Bid (Size)</span>
+    <p class="vertical-offset-1">26.89 <span>x2100</span></p>
+</div>
+<div class="col-xs-auto">
+    <span class="label">Ask (Size)</span>
+    <p class="vertical-offset-1">26.89 <span>x2100</span></p>
+</div>
+<div class="col-xs-auto">
+    <span class="label">Day's Range</span>
+    <p class="vertical-offset-1">39.84 - 40.64</p>
+</div>
+<div class="col-xs-auto">
+    <span class="label">Volume</span>
+    <p class="vertical-offset-1">24,286,568</p>
+</div>
+</div>
+</header>
+</div>
+<!-- tabs row -->
+<div class="row">
+<div class="col-xs-12">
+<div class="panel panel-default">
+<div class="panel-heading clearfix">
+    <div class="col-xs-12 col-md-auto">
+        <h3 class="inline-block panel-title">My Positions</h3>
+        <span class="text-muted">Select which positions you would like to analyze</span>
+    </div>
+    <!-- <div class="col-xs-12 col-md-auto pull-right">
+                            <div class="col-sm-auto">
+                                        <div class="et-select-wrapper" style="margin-bottom:0;">
+                                                    <select name="account" id="accountToAnalyze">
+                                                                <option value="1">Securities Account - 5555</option>
+                                                                <option value="2">Another Account - 4444</option>
+                                                                <option value="3">A Third Account - 6666</option>
+                                                    </select>
+                                        </div>
+                            </div>
+    </div> -->
+</div>
+<div class="panel-body">
+    <div class="clearfix">
+        <span class="tertiary-data-point et-icon-chevron-right rotate col-sm-auto">You have 3 QQQ positions</span>
+        <div class="col-xs-auto tertiary-data-point">
+            <input type="checkbox" id="includeInGraph">
+            <label class="text-muted" for="includeInGraph">Include Selected Positions in Graph</label>
+        </div>
+        <div class="col-xs-auto tertiary-data-point">
+            <input type="checkbox" id="IncludeGainsLosses">
+            <label class="text-muted" for="IncludeGainsLosses">Include Gains/Losses</label>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="col-xs-12">
+            <table class="table">
+                <colgroup></colgroup>
+                <colgroup class="quantity"></colgroup>
+                <colgroup></colgroup>
+                <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>Quantity</th>
+                        <th>Type</th>
+                        <th>Expiration</th>
+                        <th>Strike</th>
+                        <th>Bid</th>
+                        <th>Ask</th>
+                        <th>Include in Graph</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Long</td>
+                        <td>500</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>81.85</td>
+                        <td>81.86</td>
+                        <td><input type="checkbox" id="include1InGraph">
+                        <label class="text-muted" for="include1InGraph"><span class="sr-only">Include in Graph</span></label></td>
+                    </tr>
+                    <tr>
+                        <td>Short</td>
+                        <td>-5</td>
+                        <td>Call</td>
+                        <td>Nov 16'13</td>
+                        <td>$85</td>
+                        <td>0.14</td>
+                        <td>0.15</td>
+                        <td><input type="checkbox" id="include2InGraph">
+                        <label class="text-muted" for="include2InGraph"><span class="sr-only">Include in Graph</span></label></td>
+                    </tr>
+                    <tr>
+                        <td>Long</td>
+                        <td>5</td>
+                        <td>Call</td>
+                        <td>Nov 16'13</td>
+                        <td>$90</td>
+                        <td>0.00</td>
+                        <td>0.01</td>
+                        <td><input type="checkbox" id="include3InGraph">
+                        <label class="text-muted" for="include3InGraph"><span class="sr-only">Include in Graph</span></label></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<div class="panel panel-default">
+<div class="panel-heading">
+    <h3 class="inline-block panel-title">My Strategies</h3>
+    <span class="text-muted">Create up to 3 strategies with up to 4 stock/option legs each</span>
+</div>
+<div class="panel-body">
+    <div class="clearfix vertical-offset-2">
+        <span class="tertiary-data-point et-icon-chevron-right rotate col-xs-auto voffset1" style="line-height: 1.5">Strategy #1</span>
+        <div class="col-xs-auto">
+            <div class="et-select-wrapper" style="margin-bottom:0">
+                <select name="strategy" id="strategy1">
+                    <option value="1">Custom Strategy</option>
+                    <option value="2">Iron Butterfly</option>
+                    <option value="3">Steel Condor</option>
+                    <option value="4">Golden Eagle</option>
+                    <option value="5">Abominable Snowman</option>
+                </select>
+            </div>
+        </div>
+        <button class="btn btn-default col-xs-auto" disabled="disabled">Add an Option Leg</button>
+        <button class="btn btn-default col-xs-auto" disabled="disabled">Add a Stock Leg</button>
+        <div class="col-xs-auto form-control-static">
+            <input type="checkbox" id="IncludeGainsLosses">
+            <label class="text-muted" for="IncludeGainsLosses">Include Strategy in Graph</label>
+        </div>
+        <div class="col-xs-auto pull-right">
+            <button class="btn btn-success">Trade</button>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="col-xs-12">
+            <table class="table table-strategy">
+                <colgroup></colgroup>
+                <colgroup class="quantity"></colgroup>
+                <colgroup></colgroup>
+                <thead>
+                    <tr>
+                        <th>Order</th>
+                        <th>Quantity</th>
+                        <th>Type</th>
+                        <th>Expiration <span class="et-icon-help"></span></th>
+                        <th>Strike <span class="et-icon-help"></span></th>
+                        <th>Bid</th>
+                        <th>Ask</th>
+                        <th><span class="sr-only">Remove</span></th>
+                    </tr>
+                </thead>
+                <tfoot>
+                <tr>
+                    <td colspan="4">
+                    </td>
+                    <td class="text-right"><strong>Net Debit</strong></td>
+                    <td>1.03</td>
+                    <td>1.15</td>
+                    <td></td>
+                </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="et-select-wrapper pos">
+                                <select name="order" id="o1s1">
+                                    <option value="buy">Buy</option>
+                                    <option value="sell">Sell</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="number" step="1" min="1" class="form-control">
+                        </td>
+                        <td>
+                            <div class="et-select-wrapper">
+                                <select name="type" id="s1type1">
+                                    <option value="call">Call</option>
+                                    <option value="put">Put</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="et-select-wrapper">
+                                <select name="expiration" id="s1expiration1">
+                                    <option value="101913">Oct 19 '13</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="et-select-wrapper">
+                                <select name="strike" id="strike">
+                                    <option value="75.00">75.00</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>4.18</td>
+                        <td>4.28</td>
+                        <td><span class="et-icon-cancelx"><span class="sr-only">Remove</span></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="et-select-wrapper neg">
+                                <select name="order" id="o2s1">
+                                    <option value="buy">Buy</option>
+                                    <option value="sell">Sell</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="number" step="1" min="1" class="form-control">
+                        </td>
+                        <td>
+                            <div class="et-select-wrapper">
+                                <select name="type" id="s1type2">
+                                    <option value="call">Call</option>
+                                    <option value="put">Put</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="et-select-wrapper">
+                                <select name="expiration" id="s1expiration2">
+                                    <option value="101913">Oct 19 '13</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="et-select-wrapper">
+                                <select name="strike" id="strike">
+                                    <option value="75.00">75.00</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>4.18</td>
+                        <td>4.28</td>
+                        <td><span class="et-icon-cancelx"><span class="sr-only">Remove</span></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="et-select-wrapper pos">
+                                <select name="order" id="o3s1">
+                                    <option value="buy">Buy</option>
+                                    <option value="sell">Sell</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="number" step="1" min="1" class="form-control">
+                        </td>
+                        <td>
+                            <div class="et-select-wrapper">
+                                <select name="type" id="s1type3">
+                                    <option value="call">Call</option>
+                                    <option value="put">Put</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="et-select-wrapper">
+                                <select name="expiration" id="s1expiration3">
+                                    <option value="101913">Oct 19 '13</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="et-select-wrapper">
+                                <select name="strike" id="strike">
+                                    <option value="75.00">75.00</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>4.18</td>
+                        <td>4.28</td>
+                        <td><span class="et-icon-cancelx"><span class="sr-only">Remove</span></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="et-select-wrapper pos">
+                                <select name="order" id="o4s1">
+                                    <option value="buy">Buy</option>
+                                    <option value="sell">Sell</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="number" step="1" min="1" class="form-control">
+                        </td>
+                        <td>
+                            <div class="et-select-wrapper">
+                                <select name="type" id="s1type4">
+                                    <option value="call">Call</option>
+                                    <option value="put">Put</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="et-select-wrapper">
+                                <select name="expiration" id="s1expiration4">
+                                    <option value="101913">Oct 19 '13</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="et-select-wrapper">
+                                <select name="strike" id="strike">
+                                    <option value="75.00">75.00</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>4.18</td>
+                        <td>4.28</td>
+                        <td><span class="et-icon-cancelx"><span class="sr-only">Remove</span></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <div class="clearfix vertical-offset-2">
+        <span class="tertiary-data-point et-icon-chevron-right rotate col-xs-auto voffset1" style="line-height: 1.5">Strategy #2</span>
+        <div class="col-xs-auto">
+            <div class="et-select-wrapper" style="margin-bottom:0">
+                <select name="strategy" id="strategy1">
+                    <option value="1">Custom Strategy</option>
+                    <option value="2">Iron Butterfly</option>
+                    <option value="3">Steel Condor</option>
+                    <option value="4">Golden Eagle</option>
+                    <option value="5">Abominable Snowman</option>
+                </select>
+            </div>
+        </div>
+        <button class="btn btn-default col-xs-auto">Add an Option Leg</button>
+        <button class="btn btn-default col-xs-auto">Add a Stock Leg</button>
+        <div class="col-xs-auto form-control-static">
+            <input type="checkbox" id="IncludeGainsLosses">
+            <label class="text-muted" for="IncludeGainsLosses">Include Strategy in Graph</label>
+        </div>
+        <div class="col-xs-auto pull-right">
+            <button class="btn btn-success">Trade</button>
+        </div>
+    </div>
+    <div class="col-xs-12">
+        <table class="table table-strategy">
+            <colgroup></colgroup>
+            <colgroup class="quantity"></colgroup>
+            <colgroup></colgroup>
+            <thead>
+                <tr>
+                    <th>Order</th>
+                    <th>Quantity</th>
+                    <th>Type</th>
+                    <th>Expiration <span class="et-icon-help"></span></th>
+                    <th>Strike <span class="et-icon-help"></span></th>
+                    <th>Bid</th>
+                    <th>Ask</th>
+                    <th><span class="sr-only">Remove</span></th>
+                </tr>
+            </thead>
+            <tfoot>
+            <tr>
+                <td colspan="4">
+                </td>
+                <td class="text-right"><strong>Net Debit</strong></td>
+                <td>1.03</td>
+                <td>1.15</td>
+                <td></td>
+            </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="et-select-wrapper pos">
+                            <select name="order" id="o1s1">
+                                <option value="buy">Buy</option>
+                                <option value="sell">Sell</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="number" step="1" min="1" class="form-control">
+                    </td>
+                    <td>
+                        <div class="et-select-wrapper">
+                            <select name="type" id="s1type1">
+                                <option value="call">Call</option>
+                                <option value="put">Put</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="et-select-wrapper">
+                            <select name="expiration" id="s1expiration1">
+                                <option value="101913">Oct 19 '13</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="et-select-wrapper">
+                            <select name="strike" id="strike">
+                                <option value="75.00">75.00</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>4.18</td>
+                    <td>4.28</td>
+                    <td><span class="text-muted"><span class="et-icon-cancelx"><span class="sr-only">Remove</span></span></span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="et-select-wrapper neg">
+                            <select name="order" id="o2s1">
+                                <option value="buy">Buy</option>
+                                <option value="sell">Sell</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="number" step="1" min="1" class="form-control">
+                    </td>
+                    <td>
+                        <div class="et-select-wrapper">
+                            <select name="type" id="s1type2">
+                                <option value="call">Call</option>
+                                <option value="put">Put</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="et-select-wrapper">
+                            <select name="expiration" id="s1expiration2">
+                                <option value="101913">Oct 19 '13</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="et-select-wrapper">
+                            <select name="strike" id="strike">
+                                <option value="75.00">75.00</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>4.18</td>
+                    <td>4.28</td>
+                    <td><span class="et-icon-cancelx"><span class="sr-only">Remove</span></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="clearfix">
+        <div class="col-xs-auto pull-right">
+            <button class="btn btn-default">Analyze</button>
+        </div>
+        <div class="col-xs-auto pull-right">
+            <button class="btn btn-default">Add Strategy</button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<div class="panel panel-default">
+<div class="panel-heading row">
+    <div class="col-xs-auto pull-right graph-zoom">
+        <label for="chart1zoom">Zoom Graph</label>
+        <span class="et-icon-sign-expand"></span>
+        <span class="et-icon-sign-collapse"></span>
+        <span class="et-icon-help"></span>
+    </div>
+    <h2 class="panel-title inline col-xs-auto">My Profit/Loss Graph</h2>
+    <strong class="et-icon-help after col-xs-auto">Dividend Alert</strong>
+</div>
+<div class="panel-body">
+    <div class="clearfix">
+        <p class="col-xs-12 col-md-9 et-icon-help after">This strategy has a <strong>44%</strong> chance of making money and an expected return of <strong>$1,852</strong> on October 19, 2013.</p>
+    </div>
+    <img style="width: 100%" class="voffset3" src="http://dummyimage.com/980x400/ccc/242424&text=Chart" alt="">
+    <hr>
+    <div class="col-xs-12 col-md-7">
+        <h3>Expected Probability</h3>
+        <div class="et-icon-help after voffset2 event-probability">Move <span class="pos">green sliders</span> to analyze the probability of
+            <div class="et-select-wrapper inline-block">
+                <select name="probabilityOf" id="probabilityOf">
+                    <option value="1">closing on expiration date</option>
+                    <option value="2">something else, see copy deck</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <b class="secondary-data-point">52%</b> chance QQQ will close below <strong>$77.77</strong> on Oct 19 '13.
+        </div>
+        <div class="voffset2">
+            <b class="secondary-data-point">24%</b> chance QQQ will close between <strong>$77.77</strong> and <strong>$86.42</strong> on Oct 19 '13.
+        </div>
+        <div class="voffset2">
+            <b class="secondary-data-point">24%</b> chance QQQ will close above <strong>$86.42</strong> on Oct 19 '13.
+        </div>
+        <div class="voffset2">
+            <button class="btn btn-default">Add Slider</button>
+            <button class="btn btn-default">Remove Slider</button>
+        </div>
+        <div class="voffset3">
+            <a href="#">Submit feedback</a>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-5">
+        <h3>Customize Graph</h3>
+        <div class="voffset2 pl-expiration">P/L on expiration date <strong>Oct 19 '13</strong><span class="et-icon-help"></span></div>
+        <div class="pl-custom"><span>P/L on custom date</span><input type="date" class="form-control inline-block voffset3" style="width: auto"><span class="et-icon-help"></span></div>
+        <div class="row">
+            <div class="col-xs-12">
+                <label for="volatility" class="et-icon-help after">Volatility (Current 24.77)</label>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <input type="number" id="volatility" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">Send strategy to Total Trade Ticket</div>
+            <div class="col-xs-5 voffset2">
+                <div class="et-select-wrapper">
+                    <select name="strategyToSend" id="sendStrategy">
+                        <option value="1">Strategy #1</option>
+                        <option value="2">Strategy #2</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn btn-success voffset2 col-xs-3">Trade</button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+    </main>
+    <script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script title="Bootstrap CDN" src="http//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/tearsheet.js"></script>
+  </body>
+</html>

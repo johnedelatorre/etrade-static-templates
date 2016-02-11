@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tearsheet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/etrade-bootstrap/dist/css/etrade-bootstrap.css">
+    <link rel="stylesheet" href="css/tearsheet.css">
+  </head>
+  <body>
+    <header class="navbar">
+        <img src="img/navheader.png" class="fix-align">
+    </header>
+    <div class="container-wrapper">
+      <main class='container width-fix'><!-- container -->
+        <h1>1.2.2</h1><ul>
+<li>Fixed: Use variable for spinner size (defaults to 40px)</li>
+</ul>
+<h1>1.2.1</h1><ul>
+<li>Fixed: Two spinners were slightly broken on Android</li>
+<li>Changed: Bumped default top and bottom margin to 40px</li>
+</ul>
+<h1>1.2.0</h1><ul>
+<li>Added: Folding cube spinner</li>
+<li>Fixed: Lowercase in package name</li>
+</ul>
+<h1>1.1.0</h1><ul>
+<li>Removed one spinner (circle with rotating circle, not polished enough)</li>
+<li>Cleaned up the CSS</li>
+<li>Added more SCSS variables to more easily customize spinners</li>
+<li>Introduced SCSS <code>@for</code> loops to more easily change timing of spinners</li>
+<li>Removed moot <code>version</code> property from bower.json</li>
+</ul>
+<h1>1.0.1</h1><ul>
+<li>Fix: Missed sass variables for background-color</li>
+</ul>
+      </main>
+    </div>
+    <script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script title="Bootstrap CDN" src="http//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/tearsheet.js"></script>
+    <script src="js/spin.min.js"></script>
+    <script src="js/jquery.spin.js"></script>
+    <script>
+      $('#preview1').spin()
+
+      //Remove spinner upon click
+      $('.preview').click(function () {
+        $(this).spin(false)
+      });
+    </script>
+  </body>
+</html>

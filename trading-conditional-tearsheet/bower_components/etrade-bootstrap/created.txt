@@ -1,0 +1,9 @@
+https://itrack.corp.etradegrp.com/browse/SCMTEAM-7654
+
+Project # and Name: 40912 TSP Tax Center  
+New Repository Name: etrade_bootstrap  
+Dept. Requesting New Repository: 4008 Marketing Administration  
+Director Sponsoring New Repository: Mark Mitchell  
+Repository Type: Experimental  
+New Repository Deployable Artifact Type: This is not a deploy type reporistory  
+

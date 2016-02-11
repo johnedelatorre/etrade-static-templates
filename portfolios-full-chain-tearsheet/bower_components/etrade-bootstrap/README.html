@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tearsheet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/etrade-bootstrap/dist/css/etrade-bootstrap.css">
+    <link rel="stylesheet" href="css/tearsheet.css">
+  </head>
+  <body>
+    <main class='container'><!-- /.container -->
+      <h1>E*Trade Bootstrap</h1><p>This version of Bootstrap has been customized and formatted to fit the E*TRADE brand and style guidelines. In fact, it&#39;s become the source of the style guidlines, as we build sites in code and not in Jpegs.</p>
+<p>Documentation is in the <code>docs</code> folder, and all of that is generated into a styleguide visible at [<a href="http://styleguide.etradecreative.com">http://styleguide.etradecreative.com</a>] user: client password: Race2015!</p>
+<h2>Installation</h2><p>Ideally this package should be a bower component, which pulls in its dependencies for development. However, you should be able to use this just by pointing at the <code>css/etrade-bootstrap.css</code> file, with the <code>fonts</code> folder and its contents as a sibling to the <code>css</code> folder. (This will allow the icon font to work). The CSS is compiled for every tagged release, so you don&#39;t have to recompile the source <code>.scss</code> files.</p>
+<h2>Git Flow</h2><p>The eventual goal of this repo is to be the one truth for frameworks used across the E*Trade production environment and in prototypes as we work out how new components will interact with existing ones. To that end, we&#39;re aiming to use an adaptation of the <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Git Flow</a> workflow to manage our branches in a sane way, and allow for code reviews, as well as having one place to manage conversations about components that is close to the code.</p>
+<h3>Branches</h3><h4>Master</h4><p>This will be the main release branch, with production ready code. It will use <a href="http://semver.org/">Semantic Versioning</a> for each commit, which will be a squash-merge of commits from other branches.</p>
+<h4>Development</h4><p>This is the main branch that hosts development. New branches are created off this for work and labeled. You might, for example, have <code>feature/{featureName}</code>, <code>bug/{bugName}</code>, or <code>prototype/{prototypeName}</code>(see below). Once work on a feature or bug is complete, a pull request is created to merge it back in to the development branch. Commits to this branch should include cross browser solutions.</p>
+<h4>Prototype</h4><p>While there&#39;s no permanent Prototype branch, the intention is to have a branch for each prototype that&#39;s being worked on, so that functionality can be added to the framework as needed without directly affecting the development branch. Prototypes can sometimes require more experimental features that aren&#39;t tested cross browser, so it&#39;s useful to have a branch that might not even be merged back in to development, but could be used as reference for adding individual features when a project moves to a proper development stage. This could happen either by cherry picking commits or reconstructing features on new feature branches once the requirements are better defined (as that&#39;s something that can get worked out in the process of prototype development).</p>
+<h2>Developing with other projects</h2><p>You can use the <code>bower link</code> command to create a symlink to this repo when working in other projects so that you can see how the changes you make to this project affect other projects that have it as a bower dependency.</p>
+<p>To accomplish this</p>
+<ol>
+<li>Clone this repo to your local machine</li>
+<li>From inside the project directory run <code>$ bower link</code></li>
+<li>Run <code>gulp watch</code> inside this project to start watching for changes</li>
+<li>From any project that has this project as a dependency, run <code>$ bower link etrade-bootstrap</code></li>
+<li>Any changes you make in this project will be reflected in the target project until the next time you run <code>bower update</code></li>
+</ol>
+<hr>
+<h2>Working with the Style Guide</h2><p>The styleguide is a static website built with <a href="http://harpjs.com/">harpjs</a>.  </p>
+<p><code>npm install -g harp@0.15.2</code></p>
+<blockquote>
+<p><strong>Note</strong> there is an issue with the current versions of harp &amp; node. Installing harp v0.15.2 resolves the issue</p>
+</blockquote>
+<h2>harp conventions used in the styleguide.</h2><p><strong><a href="http://harpjs.com/docs/development/layout">layouts</a></strong> </p>
+<p><strong><a href="http://harpjs.com/docs/development/partial">partials</a></strong></p>
+<p><strong><a href="http://harpjs.com/docs/development/metadata">metadata</a></strong></p>
+<p><strong><a href="http://harpjs.com/recipes/blog-post-excerpts">excerpts</a></strong></p>
+<h2>Generating docs</h2><p>Styleguide source lives in the <code>docs</code> directory and gets copied to <code>docs/dist</code>. The <code>gulp docs:build</code> task will generate a new site.</p>
+<h2>Running a harp server during development</h2><p>harp includes a server that&#39;s helpful to run while you&#39;re doing development. It handles the static site compilation without you needing to run a watch or build script.</p>
+<p><code>cd docs &amp;&amp; harp server --port 3000</code></p>
+<h2>Managing checking in compiled CSS</h2><p>We&#39;re using <a href="http://blog.andrewray.me/dealing-with-compiled-files-in-git/">this approach</a> to manage compiled CSS in git. You have to go through this on your own development machine, as most of the steps here are changes to files that can&#39;t actually be checked in via git.</p>
+    </main>
+    <script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script title="Bootstrap CDN" src="http//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/tearsheet.js"></script>
+  </body>
+</html>

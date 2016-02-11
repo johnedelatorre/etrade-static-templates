@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tearsheet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/etrade-bootstrap/dist/css/etrade-bootstrap.css">
+    <link rel="stylesheet" href="css/tearsheet.css">
+  </head>
+  <body>
+    <header class="navbar">
+        <img src="img/navheader.png" class="fix-align">
+    </header>
+    <div class="container-wrapper">
+      <main class='container width-fix'><!-- container -->
+        <h1><a href="http://tobiasahlin.com/spinkit/">SpinKit</a></h1><p>Simple loading spinners animated with CSS. See <a href="http://tobiasahlin.com/spinkit/">demo</a>. SpinKit uses hardware accelerated (<code>translate</code> and <code>opacity</code>) CSS animations to create smooth and easily customizable animations. </p>
+<h2>Usage</h2><h3>Regular CSS</h3><p>Grab the HTML and CSS for a spinner from the example files, or add SpinKit directly to your project with <code>bower</code>:</p>
+<pre><code class="language-bash">$ bower install spinkit
+</code></pre>
+<p>or npm:</p>
+<pre><code class="language-bash">$ npm install spinkit
+</code></pre>
+<h3>SCSS</h3><p>If you&#39;re using SCSS you can include specific spinners (rather than all of them) by importing them one by one:</p>
+<pre><code class="language-scss">@import &#39;../bower_components/spinkit/scss/spinners/1-rotating-plane&#39;,
+        &#39;../bower_components/spinkit/scss/spinners/3-wave&#39;;
+</code></pre>
+<p>You currently need to use an <a href="https://github.com/postcss/autoprefixer">autoprefixer</a> if you want to support all browsers. If you&#39;re compiling your SCSS with gulp you can use <a href="https://github.com/sindresorhus/gulp-autoprefixer">gulp-autoprefixer</a>, and <a href="https://github.com/nDmitry/grunt-autoprefixer">grunt-autoprefixer</a> if you use grunt.</p>
+<p>Variables that can be overridden are listed in <a href="https://github.com/tobiasahlin/SpinKit/blob/master/scss/_variables.scss">scss/_variables.scss</a>.</p>
+<h2>Web browser compatibility</h2><p>CSS animations are supported in the latest version of all major browsers, and browsers with <code>animation</code> support make up <a href="http://caniuse.com/#feat=css-animation">almost 90% of all usage</a>. If you need to support IE9 and below, however, this section is for you.</p>
+<h3>Implementing a fallback spinner</h3><p>How do you know if you need to provide a fallback? You can easily check for animation support with <a href="http://modernizr.com">Modernizr</a>, or manually check for the <code>animation</code> property, and replace the spinner with a GIF if it&#39;s not supported:</p>
+<pre><code class="language-javascript">function browserSupportsCSSProperty(propertyName) {
+  var elm = document.createElement(&#39;div&#39;);
+  propertyName = propertyName.toLowerCase();
+
+  if (elm.style[propertyName] != undefined)
+    return true;
+
+  var propertyNameCapital = propertyName.charAt(0).toUpperCase() + propertyName.substr(1),
+    domPrefixes = &#39;Webkit Moz ms O&#39;.split(&#39; &#39;);
+
+  for (var i = 0; i &lt; domPrefixes.length; i++) {
+    if (elm.style[domPrefixes[i] + propertyNameCapital] != undefined)
+      return true;
+  }
+
+  return false;
+}
+</code></pre>
+<p>Use it to check for <code>animation</code> support:</p>
+<pre><code class="language-javascript">if (!browserSupportsCSSProperty(&#39;animation&#39;)) {
+  // fallback…
+}
+</code></pre>
+<h2>Contributing</h2><p>See <a href="https://github.com/tobiasahlin/SpinKit/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a> for details.</p>
+      </main>
+    </div>
+    <script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script title="Bootstrap CDN" src="http//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/tearsheet.js"></script>
+    <script src="js/spin.min.js"></script>
+    <script src="js/jquery.spin.js"></script>
+    <script>
+      $('#preview1').spin()
+
+      //Remove spinner upon click
+      $('.preview').click(function () {
+        $(this).spin(false)
+      });
+    </script>
+  </body>
+</html>

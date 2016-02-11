@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tearsheet</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/etrade-bootstrap/dist/css/etrade-bootstrap.css">
+    <link rel="stylesheet" href="css/tearsheet.css">
+  </head>
+  <body>
+    <main class='container'><!-- /.container -->
+      <h1>E*Trade Bootstrap</h1><p>This version of Bootstrap has been customized and formatted to fit the E*TRADE brand and style guidelines. In fact, it&#39;s become the source of the style guidlines, as we build sites in code and not in Jpegs.</p>
+<p>Documentation is in the <code>docs</code> folder, and all of that is generated into a styleguide visible at [<a href="http://styleguide.etradecreative.com">http://styleguide.etradecreative.com</a>] user: client password: Race2015!</p>
+<h2>Installation</h2><p>Ideally this package should be a bower component, which pulls in its dependencies for development. However, you should be able to use this just by pointing at the <code>css/etrade-bootstrap.css</code> file, with the <code>fonts</code> folder and its contents as a sibling to the <code>css</code> folder. (This will allow the icon font to work). The CSS is compiled for every tagged release, so you don&#39;t have to recompile the source <code>.scss</code> files.</p>
+<h2>Developing with other projects</h2><p>You can use the <code>bower link</code> command to create a symlink to this repo when working in other projects so that you can see how the changes you make to this project affect other projects that have it as a bower dependency.</p>
+<p>To accomplish this</p>
+<ol>
+<li>Clone this repo to your local machine</li>
+<li>From inside the project directory run <code>$ bower link</code></li>
+<li>Run <code>gulp watch</code> inside this project to start watching for changes</li>
+<li>From any project that has this project as a dependency, run <code>$ bower link etrade-bootstrap</code></li>
+<li>Any changes you make in this project will be reflected in the target project until the next time you run <code>bower update</code></li>
+</ol>
+<hr>
+    </main>
+    <script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script title="Bootstrap CDN" src="http//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/tearsheet.js"></script>
+  </body>
+</html>

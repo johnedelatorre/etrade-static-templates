@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trade Ticket | Default View</title>
+	<!--Framework CSS-->
+	<link rel="stylesheet" href="css/framework.css">
+    <!--Trade Ticket CSS-->
+    <link rel="stylesheet" href="css/trade-ticket.css">
+	<!--Modernizr-->
+    <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body class="default">
+
+
+
+<div class="chrome-container">      
+                <!--Begin Widget Content-->
+                <div class="widget-header">
+                    <div class="col col-1">
+                        <form action="/" class="drop-downs">
+                            <fieldset>
+                                <div class="select-dark">
+                                    <label for="Accounts">Accounts</label>
+                                    <select class="dk" name="trading-account" tabindex="1">
+                                        <option value="Stocks 1234">John Smith - Brokerage - 3423</option>
+                                        <option value="Banking 1234">John Smith - Retirement - 3423</option>
+                                        <option value="Retirement 1234">John Smith - Banking - 3423</option>
+                                        <option value="Credit Card 1234">John Smith - Credit Card - 3423</option>
+                                    </select>
+                                </div><!--/select-dark-->
+                            </fieldset>
+                        </form>
+                    </div><!--/col-1-->
+                </div><!--/widget-header-->
+                <div class="tabs">
+                    <div class="tabset-1">
+                        <ul class="tabs-nav">
+                            <li><a href="#tab-1">Stocks</a></li>
+                            <li><a href="#tab-2">Options</a></li>
+                            <li><a href="#tab-3">Mutual Funds</a></li>
+                            <li><a href="#tab-4">Conditional</a></li>
+                            <li><a href="#tab-5">Customs</a></li>
+                        </ul>
+                        <!--Tab 1-->
+                        <div class="tab-container" id="tab-1">
+                            <div class="field-group">
+                                <form action="/">
+                                    <div class="field-row">
+                                        <fieldset>
+                                            <div class="select-light">
+                                                <label for="Order Type">Order Type</label>
+                                                <select class="dk" name="order-type" tabindex="1">
+                                                    <option value="Buy">Buy</option>
+                                                    <option value="Sell">Sell</option>
+                                                    <option value="Sell Short">Sell Short</option>
+                                                    <option value="Buy To Cover">Buy To Cover</option>
+                                                </select>
+                                            </div><!--/select-light-->
+                                        </fieldset>
+                                        <fieldset>
+                                            <label for="Quantity">Quantity</label>
+                                            <input class="form-text quantity" tabindex="2" type="text"/>
+                                        </fieldset>
+                                        <fieldset>
+                                            <label for="Symbol">Symbol</label>
+                                            <input class="form-text search symbol" tabindex="3" type="text"/>
+                                        </fieldset>
+                                    </div><!--/field-row-->
+                                    <div class="field-row">
+                                        <fieldset>
+                                            <div class="select-light">
+                                                <label for="Price Type">Price Type</label>
+                                                <select class="dk" name="price-type" tabindex="4">
+                                                    <option value="Market">Market</option>
+                                                    <option value="Market On Close">Market On Close</option>
+                                                    <option value="Limit">Limit</option>
+                                                    <option value="Stop">Stop</option>
+                                                    <option value="Stop Limit">Stop Limit</option>
+                                                    <option value="Trailing Stop %">Trailing Stop %</option>
+                                                    <option value="Trailing Stop $">Trailing Stop $</option>
+                                                </select>
+                                            </div><!--/select-light-->
+                                        </fieldset>
+                                        <fieldset>
+                                            <label for="Market Price">Market Price</label>
+                                            <input class="form-text market-price" tabindex="5" type="text"/>
+                                        </fieldset>
+                                    </div><!--/field-row-->
+                                    <div class="field-row">
+                                        <fieldset>
+                                            <div class="select-light">
+                                                <label for="Term">Term</label>
+                                                <select class="dk" name="term" tabindex="4">
+                                                    <option value="Market">Good For The Day</option>
+                                                </select>
+                                            </div><!--/select-light-->
+                                        </fieldset>
+                                        <fieldset class="check">
+                                            <p><input class="checkbox-small" id="choice one small" type="checkbox" value="choice one"/>
+                                                <label for="choice one">All-or-none</label></p>
+                                        </fieldset>
+                                    </div><!--/field-row-->
+                                </form>
+                            </div><!--/field-group-->
+                            <div class="widget-well">
+                                <div class="well">
+                                    <div class="row">
+                                        <div class="security">Stock Quote</div>
+                                        <div class="security-symbol">---</div>
+                                    </div><!--/row-->
+                                    <div class="row price">
+                                        <section class="left">
+                                            <div class="label">Last Price</div>
+                                            <div class="value pos">---</div>
+                                        </section>
+                                        <section class="center">
+                                            <div class="label">Today's Change</div>
+                                            <div class="value pos">---</div>
+                                        </section>
+                                        <section class="right">
+                                            <div class="label">Volume</div>
+                                            <div class="value">---</div>
+                                        </section>
+                                    </div><!--/row-->
+                                    <div class="row size">
+                                        <section class="left">
+                                            <div class="label">Bid (Size)</div>
+                                            <div class="value-small">---</div>
+                                        </section>
+                                        <section class="center">
+                                            <div class="label">Ask (Size)</div>
+                                            <div class="value-small">---</div>
+                                        </section>
+                                        <section class="right">
+                                            <div class="label">Prev. Close</div>
+                                            <div class="value-small">---</div>
+                                        </section>
+                                    </div><!--/row-->
+                                    <div class="meta">
+                                        <div class="delay">15 Minute Delay</div>
+                                        <div class="last-trade">Last Trade 4:00 PM ET 11/28/12</div>
+                                    </div><!--/row-->
+                                </div><!--/well-->
+                            </div><!--/widget-well-->
+                        </div><!--/tab-1-->
+                        
+                        <!--Tab 2-->
+                        <div class="tab-container" id="tab-2">
+                            <h1>Options: Still To Come</h1>                     
+                        </div><!--/tab-2-->
+                        
+                        <!--Tab 3-->
+                        <div class="tab-container" id="tab-3">
+                            <h1>Mutual Funds: Still To Come</h1>
+                        </div><!--/tab-3-->
+                        
+                        <!--Tab 4-->
+                        <div class="tab-container" id="tab-4">
+                            <h1>Conditional: Still To Come</h1>
+                        </div><!--/tab-4-->
+                        
+                        <!--Tab 5-->
+                        <div class="tab-container" id="tab-5">
+                            <h1>Customs: Still To Come</h1>
+                        </div><!--/tab-4-->
+                    </div><!--/tabset-1-->
+                </div><!--/tabs-->
+                <div class="trading-preview">
+	              	<a class="btn green" href="trade-preview.html"><span>PREVIEW ORDER</span></a>
+	              	<a class="ie7">PREVIEW ORDER</a>
+                </div><!--/trading-preview-->
+</div><!--/chrome-container-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!--Init Custom Drop Selects-->
+<script>
+	$(function () {
+  	$('.dk').dropkick();
+  });
+</script> 
+<!--For Custom Drop Selects-->
+<script src="js/dropkick.js"></script>
+<!--For Tabs Standard-->
+<script src="js/tabs.js"></script>
+</body>
+</html>
